@@ -7,13 +7,25 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+// import CallToAction from '~/components/widgets/CallToAction.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Container from "~/components/widgets/container.astro";
+import Sectionhead from "~/components/widgets/sectionhead.astro";
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedSpeakers = await getCollection("speaker", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'GOSIM AI Paris 2025',
+  description: 'GOSIM AI Paris 2025 is a gathering of open-source AI projects, developers, researchers, and industry sponsors to share knowledge, learn from each other, and collaborate.',
   ignoreTitleTemplate: true,
 };
 ---
@@ -56,6 +68,17 @@ const metadata = {
 
   <Note />
 
+    <!-- Stats Widget ****************** -->
+
+    <Stats
+    stats={[
+      { title: 'Conference Tracks', amount: '6' },
+      { title: 'Talks', amount: '50+' },
+      { title: 'Demos', amount: '20' },
+      { title: 'Attendants', amount: '500+' },
+    ]}
+  />
+
   <!-- Features Widget *************** -->
 
   <Features
@@ -63,6 +86,7 @@ const metadata = {
     tagline="Why You Need to Attend"
     title="What you get with GOSIM Paris"
     subtitle="From foundational models to open-source breakthroughs, this is where ideas ignite. Join leaders and experts as they explore the most pressing challenges and the most promising opportunities in AI, from ethical considerations to the future of decentralized AI."
+
     items={[
       {
         title: 'French Flair, Global Impact',
@@ -109,6 +133,7 @@ const metadata = {
     title="6 Conference Tracks"
     subtitle="The innovation is already here. Are you?"
     tagline="Joining the the world of open-source AI"
+    
     items={[
       {
         title: 'AI Model',
@@ -152,12 +177,12 @@ const metadata = {
     <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
   </Fragment>
 </Features2>
-  <!-- Content Widget **************** -->
 
   <Content
   title="GOSIM AI Spotlight"
   subtitle="Step into the realm of innovation at GOSIM AI Spotlight—where Europe’s rich tradition of creativity meets the cutting edge of open-source AI. Join us in this GOSIM AI co-located event that celebrates collaboration, diversity, and the pioneering spirit of our vibrant continent."
   isReversed
+  
   items={[
     {
       title: 'On-Site Demo',
@@ -180,10 +205,55 @@ const metadata = {
 
   <Fragment slot="bg">
     <div class="absolute inset-0 bg-yellow-40 dark:bg-transparent"></div>
+      <!-- Content Widget **************** -->
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('src/assets/images/hero-bk07.png');">
+  </div>
+`}
   </Fragment>
 </Content>
 
-   
+
+<Container>
+  <Sectionhead>
+    <Fragment slot="title">Speakers</Fragment>
+    <Fragment slot="desc">World Class Open-Source Leaders and Developers.</Fragment>
+  </Sectionhead>
+
+  <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+    <h2 class="font-bold text-3xl text-gray-800">
+      Empowering the world with Open-Source.
+    </h2>
+    <p class="text-lg leading-relaxed text-slate-500">
+      The GOSIM AI Paris 2025 speaker lineup is a diverse group of open-source leaders and developers who are passionate about sharing their knowledge and expertise with the community. From foundational models to cutting-edge research, our speakers will cover a wide range of topics to help you stay at the forefront of AI innovation. Check out some of our featured speakers below.
+    </p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    {
+      publishedSpeakers.map((speakerEntry) => (
+        <div class="group">
+          <div class="w-full aspect-square">
+            <Picture
+              src={speakerEntry.data.avatar.src}
+              alt={speakerEntry.data.avatar.alt}
+              sizes="(max-width: 800px) 100vw, 400px"
+              width={400}
+              height={400}
+              class="w-full rounded-full transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
+            />
+          </div>
+
+          <div class="mt-4 text-center">
+            <h2 class="text-lg text-gray-800">{speakerEntry.data.name}</h2>
+            <h3 class="text-sm text-slate-500">
+              {speakerEntry.data.title}
+            </h3>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</Container>
+ 
 
   <!-- Steps Widget ****************** -->
 
@@ -287,16 +357,7 @@ const metadata = {
     ]}
   />
 -->
-  <!-- Stats Widget ****************** -->
 
-  <Stats
-    stats={[
-      { title: 'Conference Tracks', amount: '6' },
-      { title: 'Talks', amount: '50+' },
-      { title: 'Demos', amount: '20' },
-      { title: 'Attendants', amount: '500+' },
-    ]}
-  />
 
   <!-- CallToAction Widget *********** 
 
@@ -322,5 +383,8 @@ const metadata = {
   </CallToAction>
 
   -->
+
+
+
 
 </Layout>

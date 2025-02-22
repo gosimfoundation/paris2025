@@ -65,6 +65,23 @@ const postCollection = defineCollection({
   }),
 });
 
+
+const speakerCollection = defineCollection({
+  loader: glob({ pattern: ['*.md', '*.mdx'], base: 'src/data/speakers' }),
+  schema: z.object({
+    draft: z.boolean(),
+    name: z.string(),
+    title: z.string(),
+    avatar: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }),
+    publishDate: z.string().transform(str => new Date(str)),
+  }),
+});
+
+
 export const collections = {
   post: postCollection,
+  speaker: speakerCollection,
 };

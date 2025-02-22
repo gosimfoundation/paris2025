@@ -1,7 +1,7 @@
 site:
   name: GOSIM-AI-Paris-2025
   site: 'https://gosimfoundation.github.io/'
-  base: '/paris2025'
+  base: '/'
   trailingSlash: true
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: GOSIMFoundation
-    template: '%s — AstroWind'
+    default: GOSIM AI Paris
+    template: '%s — GOSIMS'
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: GOSIM AI Paris
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@gosim'
+    site: '@gosim'
     cardType: summary_large_image
 
 i18n:
