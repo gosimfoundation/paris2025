@@ -1,8 +1,8 @@
 site:
   name: GOSIM-AI-Paris-2025
   site: 'https://gosimfoundation.github.io/'
-  base: '/website'
-  trailingSlash: false
+  base: '/paris2025'
+  trailingSlash: true
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
