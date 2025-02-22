@@ -214,11 +214,6 @@ const metadata = {
 
 
 <Container>
-  <Sectionhead>
-    <Fragment slot="title">Speakers</Fragment>
-    <Fragment slot="desc">World Class Open-Source Leaders and Developers.</Fragment>
-  </Sectionhead>
-
   <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
     <h2 class="font-bold text-3xl text-gray-800">
       Empowering the world with Open-Source.
@@ -227,26 +222,38 @@ const metadata = {
       The GOSIM AI Paris 2025 speaker lineup is a diverse group of open-source leaders and developers who are passionate about sharing their knowledge and expertise with the community. From foundational models to cutting-edge research, our speakers will cover a wide range of topics to help you stay at the forefront of AI innovation. Check out some of our featured speakers below.
     </p>
   </div>
-  <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+  <style>
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <div class="grid md:grid-cols-4 gap-10 mx-auto max-w-4xl mt-12">
     {
       publishedSpeakers.map((speakerEntry) => (
-        <div class="group">
-          <div class="w-full aspect-square">
-            <Picture
-              src={speakerEntry.data.avatar.src}
-              alt={speakerEntry.data.avatar.alt}
-              sizes="(max-width: 800px) 100vw, 400px"
-              width={400}
-              height={400}
-              class="w-full rounded-full transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
-            />
+        <div class="group relative">
+          <div class="w-full aspect-square rounded-lg overflow-hidden transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
+            <div class="w-full h-full object-cover object-center rounded-lg">
+              <Picture
+                src={speakerEntry.data.avatar.src}
+                alt={speakerEntry.data.avatar.alt}
+                sizes="(max-width: 800px) 100vw, 400px"
+                width={400}
+                height={400}
+                class="w-full h-full object-cover object-center rounded-lg"
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-white/30 to-black/70 opacity-50 rounded-lg group-hover:from-black/50 group-hover:to-black/90 group-hover:opacity-70 transition-all duration-500"></div>
           </div>
 
-          <div class="mt-4 text-center">
-            <h2 class="text-lg text-gray-800">{speakerEntry.data.name}</h2>
-            <h3 class="text-sm text-slate-500">
-              {speakerEntry.data.title}
-            </h3>
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition-all duration-500 rounded-lg group-hover:justify-start">
+            <h2 class="text-lg">{speakerEntry.data.name}</h2>
+            <h3 class="text-sm opacity-0 group-hover:opacity-0 transition-opacity duration-500">{speakerEntry.data.title}</h3>
+            <p class="text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-100">{speakerEntry.data.topic}</p>
           </div>
         </div>
       ))
