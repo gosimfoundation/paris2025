@@ -74,7 +74,12 @@ export default defineConfig({
   ],
 
   image: {
-    domains: ['cdn.pixabay.com'],
+    domains: ['cdn.pixabay.com', '192.168.125.136'],
+  },
+
+  server: {
+    port: 80, // Replace with desired port
+    host: true // Optional: Allow network access
   },
 
   markdown: {
