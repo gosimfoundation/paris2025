@@ -13,19 +13,20 @@ import Stats from '~/components/widgets/Stats.astro';
 // import CallToAction from '~/components/widgets/CallToAction.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 
-import { getCollection } from "astro:content";
-import { Picture } from "astro:assets";
-import Container from "~/components/widgets/container.astro";
-import Sectionhead from "~/components/widgets/sectionhead.astro";
+import { getCollection } from 'astro:content';
+import { Picture } from 'astro:assets';
+import Container from '~/components/widgets/container.astro';
+import Sectionhead from '~/components/widgets/sectionhead.astro';
 
 // Filter team entries with 'draft: false' & date before current date
-const publishedSpeakers = await getCollection("speaker", ({ data }) => {
+const publishedSpeakers = await getCollection('speaker', ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
 
 const metadata = {
   title: 'GOSIM AI Paris 2025',
-  description: 'GOSIM AI Paris 2025 is a gathering of open-source AI projects, developers, researchers, and industry sponsors to share knowledge, learn from each other, and collaborate.',
+  description:
+    'GOSIM AI Paris 2025 is a gathering of open-source AI projects, developers, researchers, and industry sponsors to share knowledge, learn from each other, and collaborate.',
   ignoreTitleTemplate: true,
 };
 ---
@@ -42,11 +43,9 @@ const metadata = {
         target: '_blank',
         icon: 'tabler:arrow-right',
       },
-  
     ]}
-
     bg={`
-      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('src/assets/images/hero-bk06.png');">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/src/assets/images/hero-bk06.png');">
       </div>
     `}
   >
@@ -56,11 +55,11 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline text-2xl">
-        <span class="font-semibold">GOSIM Paris</span>, the City of Light, transforms into the City of Artificial Brilliance this May. GOSIM AI 2025 invites visionaries, disruptors, and pioneers to converge at </span>
-
+        <span class="font-semibold">GOSIM Paris</span>, the City of Light, transforms into the City of Artificial
+        Brilliance this May. GOSIM AI 2025 invites visionaries, disruptors, and pioneers to converge at
         <span class="text-accent dark:text-white font-semibold highlight"> Station F, a crucible of innovation, </span>
-        to shape the next frontier of AI. 
-
+        to shape the next frontier of AI.
+      </span>
     </Fragment>
   </Hero>
 
@@ -68,9 +67,9 @@ const metadata = {
 
   <Note />
 
-    <!-- Stats Widget ****************** -->
+  <!-- Stats Widget ****************** -->
 
-    <Stats
+  <Stats
     stats={[
       { title: 'Conference Tracks', amount: '6' },
       { title: 'Talks', amount: '50+' },
@@ -86,7 +85,6 @@ const metadata = {
     tagline="Why You Need to Attend"
     title="What you get with GOSIM Paris"
     subtitle="From foundational models to open-source breakthroughs, this is where ideas ignite. Join leaders and experts as they explore the most pressing challenges and the most promising opportunities in AI, from ethical considerations to the future of decentralized AI."
-
     items={[
       {
         title: 'French Flair, Global Impact',
@@ -115,7 +113,7 @@ const metadata = {
       {
         title: 'Hands-On Workshops',
         description:
-          "Experience real-time coding labs, interactive AI tool demos, and expert-led sessions designed to provide practical skills and deep technical insights.",
+          'Experience real-time coding labs, interactive AI tool demos, and expert-led sessions designed to provide practical skills and deep technical insights.',
         icon: 'tabler:arrows-right-left',
       },
       {
@@ -133,17 +131,17 @@ const metadata = {
     title="6 Conference Tracks"
     subtitle="The innovation is already here. Are you?"
     tagline="Joining the the world of open-source AI"
-    
     items={[
       {
         title: 'AI Model',
-        description: "Shaping the Future with Open-Source AI: Unleashing world-class performance in LLMs, multi-modal AI, cutting-edge image and video generation models, and pioneering on-device small LLMs pushing the boundaries of AI efficiency and accessibility.",
+        description:
+          'Shaping the Future with Open-Source AI: Unleashing world-class performance in LLMs, multi-modal AI, cutting-edge image and video generation models, and pioneering on-device small LLMs pushing the boundaries of AI efficiency and accessibility.',
         icon: 'flat-color-icons:template',
       },
       {
         title: 'AI Infra',
         description:
-          "Building Scalable AI with Open-Source Innovation: Advancing AI training, inference, fine-tuning, reinforcement learning frameworks, optimized on-device inference solutions, and seamless large-scale cloud deployment to enable next-generation AI capabilities.",
+          'Building Scalable AI with Open-Source Innovation: Advancing AI training, inference, fine-tuning, reinforcement learning frameworks, optimized on-device inference solutions, and seamless large-scale cloud deployment to enable next-generation AI capabilities.',
         icon: 'flat-color-icons:gallery',
       },
       {
@@ -155,7 +153,7 @@ const metadata = {
       {
         title: 'Embodied AI',
         description:
-          "Propelling Open-Source Robotics Forward: Innovating community-driven robot design, expanding openly available datasets, developing advanced visual language models, and shaping policy frameworks that define the future of autonomous systems.",
+          'Propelling Open-Source Robotics Forward: Innovating community-driven robot design, expanding openly available datasets, developing advanced visual language models, and shaping policy frameworks that define the future of autonomous systems.',
         icon: 'flat-color-icons:document',
       },
       {
@@ -166,101 +164,103 @@ const metadata = {
       },
       {
         title: 'Global Open-Source AI Collaboration',
-        description: 'Strengthening the AI Ecosystem: Expanding global knowledge-sharing, collaborative dataset development, transparent AI governance, and robust open-source infrastructure to drive worldwide innovation in AI.',
+        description:
+          'Strengthening the AI Ecosystem: Expanding global knowledge-sharing, collaborative dataset development, transparent AI governance, and robust open-source infrastructure to drive worldwide innovation in AI.',
         icon: 'flat-color-icons:currency-exchange',
-      }
+      },
     ]}
   >
-
- 
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
-</Features2>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
 
   <Content
-  title="GOSIM AI Spotlight"
-  subtitle="Step into the realm of innovation at GOSIM AI Spotlight—where Europe’s rich tradition of creativity meets the cutting edge of open-source AI. Join us in this GOSIM AI co-located event that celebrates collaboration, diversity, and the pioneering spirit of our vibrant continent."
-  isReversed
-  
-  items={[
-    {
-      title: 'On-Site Demo',
-      description:
-        'Socializing with 15 most innovative open-source AI projects from worldwide. Seeking collaborations, partnerships, and sponsroship.',
-    },
-    {
-      title: 'Project Pitch:',
-      description: `Understanding the big idea behind the persona endeavor to conquer the challenges of the future. The future is now, and we're here to make it happen.`,
-    },
-  ]}
+    title="GOSIM AI Spotlight"
+    subtitle="Step into the realm of innovation at GOSIM AI Spotlight—where Europe’s rich tradition of creativity meets the cutting edge of open-source AI. Join us in this GOSIM AI co-located event that celebrates collaboration, diversity, and the pioneering spirit of our vibrant continent."
+    isReversed
+    items={[
+      {
+        title: 'On-Site Demo',
+        description:
+          'Socializing with 15 most innovative open-source AI projects from worldwide. Seeking collaborations, partnerships, and sponsroship.',
+      },
+      {
+        title: 'Project Pitch:',
+        description: `Understanding the big idea behind the persona endeavor to conquer the challenges of the future. The future is now, and we're here to make it happen.`,
+      },
+    ]}
     image={{ src: '~/assets/images/gosim-spotlight.png', alt: 'Spotlight Image' }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Learning from the Innovators <br /><span class="text-2xl">Launching with GOSIM</span>
+      </h3>
+    </Fragment>
 
->
-  <Fragment slot="content">
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-      Learning from the Innovators <br /><span class="text-2xl">Launching with GOSIM</span>
-    </h3>
-  </Fragment>
-
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-yellow-40 dark:bg-transparent"></div>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-yellow-40 dark:bg-transparent"></div>
       <!-- Content Widget **************** -->
-  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('src/assets/images/hero-bk07.png');">
-  </div>
-`}
-  </Fragment>
-</Content>
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('/src/assets/images/hero-bk07.png');"
+      >
+      </div>
+    </Fragment>
+  </Content>
 
-
-<Container>
-  <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-    <h2 class="font-bold text-3xl text-gray-800">
-      Empowering the world with Open-Source.
-    </h2>
-    <p class="text-lg leading-relaxed text-slate-500">
-      The GOSIM AI Paris 2025 speaker lineup is a diverse group of open-source leaders and developers who are passionate about sharing their knowledge and expertise with the community. From foundational models to cutting-edge research, our speakers will cover a wide range of topics to help you stay at the forefront of AI innovation. Check out some of our featured speakers below.
-    </p>
-  </div>
-  <style>
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
+  <Container>
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">Empowering the world with Open-Source.</h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        The GOSIM AI Paris 2025 speaker lineup is a diverse group of open-source leaders and developers who are
+        passionate about sharing their knowledge and expertise with the community. From foundational models to
+        cutting-edge research, our speakers will cover a wide range of topics to help you stay at the forefront of AI
+        innovation. Check out some of our featured speakers below.
+      </p>
+    </div>
+    <style>
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
       }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-  </style>
-  <div class="grid md:grid-cols-4 gap-10 mx-auto max-w-4xl mt-12">
-    {
-      publishedSpeakers.map((speakerEntry) => (
-        <div class="group relative">
-          <div class="w-full aspect-square rounded-lg overflow-hidden transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
-            <div class="w-full h-full object-cover object-center rounded-lg">
-              <Picture
-                src={speakerEntry.data.avatar.src}
-                alt={speakerEntry.data.avatar.alt}
-                sizes="(max-width: 800px) 100vw, 400px"
-                width={400}
-                height={400}
-                class="w-full h-full object-cover object-center rounded-lg"
-              />
+    </style>
+    <div class="grid md:grid-cols-4 gap-10 mx-auto max-w-4xl mt-12">
+      {
+        publishedSpeakers.map((speakerEntry) => (
+          <div class="group relative">
+            <div class="w-full aspect-square rounded-lg overflow-hidden transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
+              <div class="w-full h-full object-cover object-center rounded-lg">
+                <Picture
+                  src={speakerEntry.data.avatar.src}
+                  alt={speakerEntry.data.avatar.alt}
+                  sizes="(max-width: 800px) 100vw, 400px"
+                  width={400}
+                  height={400}
+                  class="w-full h-full object-cover object-center rounded-lg"
+                />
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-b from-white/30 to-black/70 opacity-50 rounded-lg group-hover:from-black/50 group-hover:to-black/90 group-hover:opacity-70 transition-all duration-500" />
             </div>
-            <div class="absolute inset-0 bg-gradient-to-b from-white/30 to-black/70 opacity-50 rounded-lg group-hover:from-black/50 group-hover:to-black/90 group-hover:opacity-70 transition-all duration-500"></div>
-          </div>
 
-          <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition-all duration-500 rounded-lg group-hover:justify-start">
-            <h2 class="text-lg">{speakerEntry.data.name}</h2>
-            <h3 class="text-sm opacity-0 group-hover:opacity-0 transition-opacity duration-500">{speakerEntry.data.title}</h3>
-            <p class="text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-100">{speakerEntry.data.topic}</p>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition-all duration-500 rounded-lg group-hover:justify-start">
+              <h2 class="text-lg">{speakerEntry.data.name}</h2>
+              <h3 class="text-sm opacity-0 group-hover:opacity-0 transition-opacity duration-500">
+                {speakerEntry.data.title}
+              </h3>
+              <p class="text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-100">
+                {speakerEntry.data.topic}
+              </p>
+            </div>
           </div>
-        </div>
-      ))
-    }
-  </div>
-</Container>
- 
+        ))
+      }
+    </div>
+  </Container>
 
   <!-- Steps Widget ****************** -->
 
@@ -270,13 +270,13 @@ const metadata = {
       {
         title: 'September 23-24, 2023: <span class="font-medium">GOSIM Workshop</span>',
         description:
-          "The essence of the GOSIM workshop revolves around championing and enhancing open-source contributions and utilization.",
+          'The essence of the GOSIM workshop revolves around championing and enhancing open-source contributions and utilization.',
         icon: 'tabler:package',
       },
       {
         title: 'September 26, 2023: <span class="font-medium">GOSIM Conference</span>',
         description:
-          "The GOSIM conference is a platform for open-source AI projects to showcase their work and engage with the community.",
+          'The GOSIM conference is a platform for open-source AI projects to showcase their work and engage with the community.',
         icon: 'tabler:letter-case',
       },
       {
@@ -290,26 +290,23 @@ const metadata = {
         description:
           'The GOSIM conference is a platform for open-source AI projects to showcase their work and engage with the community.',
         icon: 'tabler:paint',
-      },      
+      },
       {
         title: 'May 6-7, 2025: <span class="font-medium">GOSIM AI Paris</span>',
-        description:
-          'Expected to be our best conference yet, plan to visit us in Paris this year!',
+        description: 'Expected to be our best conference yet, plan to visit us in Paris this year!',
         icon: 'tabler:rocket',
       },
       {
         title: 'May 14-15, 2025: <span class="font-medium">GOSIM Rust Spotlight</span>',
-        description:
-          'Join us in the co-located event with RustWeek',
+        description: 'Join us in the co-located event with RustWeek',
         icon: 'tabler:check',
-      },      
+      },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
       alt: 'Steps image',
     }}
   />
-
 
   <!-- HighlightedPosts Widget *******
 
@@ -323,7 +320,7 @@ const metadata = {
 
    -->
 
-  <!-- FAQs Widget ******************* 
+  <!-- FAQs Widget *******************
 
   <FAQs
     title="Frequently Asked Questions"
@@ -365,8 +362,7 @@ const metadata = {
   />
 -->
 
-
-  <!-- CallToAction Widget *********** 
+  <!-- CallToAction Widget ***********
 
   <CallToAction
     actions={[
@@ -390,8 +386,4 @@ const metadata = {
   </CallToAction>
 
   -->
-
-
-
-
 </Layout>
