@@ -1,0 +1,22 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import data from '~/data/db/db-sample.json';
+---
+
+<Layout>
+    <section>
+      <h1>Conference Schedule</h1>
+      {data.entries.map((entry) => (
+        <article key={entry.id} style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem;">
+          <h2>{entry.name}</h2>
+          <p><strong>Email:</strong> {entry.email}</p>
+          {entry.org && <p><strong>Organization:</strong> {entry.org}</p>}
+          {entry.title && <p><strong>Title:</strong> {entry.title}</p>}
+          {entry.abstract && <p><strong>Abstract:</strong> {entry.abstract}</p>}
+          {entry.details && <p><strong>Details:</strong> {entry.details}</p>}
+          <p><strong>Date:</strong> {entry.date}</p>
+          <p><strong>Time:</strong> {entry.time}</p>
+        </article>
+      ))}
+    </section>
+  </Layout>
