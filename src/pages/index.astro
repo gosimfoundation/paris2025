@@ -19,7 +19,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import { getCollection } from 'astro:content';
 import { Picture } from 'astro:assets';
 import Container from '~/components/widgets/container.astro';
-import Sectionhead from '~/components/widgets/sectionhead.astro';
+// import Sectionhead from '~/components/widgets/Sectionhead.astro';
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedSpeakers = await getCollection('speaker', ({ data }) => {
@@ -48,7 +48,7 @@ const metadata = {
       },
     ]}
     bg={`
-      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/src/assets/images/hero-bk06.png');">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero-bk06.png')">
       </div>
     `}
   >
@@ -64,11 +64,10 @@ const metadata = {
         to shape the next frontier of AI.
       </span>
     </Fragment>
-
   </Hero>
 
-    <!-- GOSIM Widget ******************* -->
-    <Gosim />
+  <!-- GOSIM Widget ******************* -->
+  <Gosim />
 
   <!-- Stats Widget ****************** -->
 
@@ -85,9 +84,7 @@ const metadata = {
     <Sponsors />
   </div>
 
-
   <Schedule />
-
 
   <!-- Features Widget *************** -->
 
@@ -214,7 +211,7 @@ const metadata = {
       <!-- Content Widget **************** -->
       <div
         class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/src/assets/images/hero-bk07.png');"
+        style="background-image: url('/images/hero-bk07.png')"
       >
       </div>
     </Fragment>
