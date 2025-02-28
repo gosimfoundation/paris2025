@@ -4,12 +4,13 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Gosim from '~/components/widgets/Gosim.astro';
 
-import Schedule from '~/components/widgets/Schedule.astro';
-import Sponsors from '~/components/widgets/Sponsors.astro';
+// import Schedule from '~/components/widgets/Schedule.astro';
+// import Sponsors from '~/components/widgets/Sponsors.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
+// import Announcement from '~/components/widgets/Announcement.astro';
 // import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 // import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -80,11 +81,11 @@ const metadata = {
     ]}
   />
 
-  <div class="mt-16 border-y py-6 border-slate-100">
+  <!-- <div class="mt-16 border-y py-6 border-slate-100">
     <Sponsors />
-  </div>
+  </div> -->
 
-  <Schedule />
+  <!-- <Schedule /> -->
 
   <!-- Features Widget *************** -->
 
@@ -209,11 +210,7 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-yellow-40 dark:bg-transparent"></div>
       <!-- Content Widget **************** -->
-      <div
-        class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/hero-bk07.png')"
-      >
-      </div>
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero-bk07.png')"></div>
     </Fragment>
   </Content>
 
