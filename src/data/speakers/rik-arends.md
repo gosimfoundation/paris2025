@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 name: "Rik Arends"
 title: "Co-Founder"
 avatar: {
