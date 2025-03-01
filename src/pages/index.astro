@@ -4,12 +4,13 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Gosim from '~/components/widgets/Gosim.astro';
 
-import Schedule from '~/components/widgets/Schedule.astro';
-import Sponsors from '~/components/widgets/Sponsors.astro';
+// import Schedule from '~/components/widgets/Schedule.astro';
+// import Sponsors from '~/components/widgets/Sponsors.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
+// import Announcement from '~/components/widgets/Announcement.astro';
 // import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 // import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -19,7 +20,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import { getCollection } from 'astro:content';
 import { Picture } from 'astro:assets';
 import Container from '~/components/widgets/container.astro';
-import heroBackground from '../assets/images/hero-bk06.png';
+// import Sectionhead from '~/components/widgets/Sectionhead.astro';
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedSpeakers = await getCollection('speaker', ({ data }) => {
@@ -65,11 +66,10 @@ const metadata = {
         to shape the next frontier of AI.
       </span>
     </Fragment>
-
   </Hero>
 
-    <!-- GOSIM Widget ******************* -->
-    <Gosim />
+  <!-- GOSIM Widget ******************* -->
+  <Gosim />
 
   <!-- Stats Widget ****************** -->
 
@@ -82,13 +82,11 @@ const metadata = {
     ]}
   />
 
-  <div class="mt-16 border-y py-6 border-slate-100">
+  <!-- <div class="mt-16 border-y py-6 border-slate-100">
     <Sponsors />
-  </div>
+  </div> -->
 
-
-  <Schedule />
-
+  <!-- <Schedule /> -->
 
   <!-- Features Widget *************** -->
 
@@ -216,11 +214,7 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-yellow-40 dark:bg-transparent"></div>
       <!-- Content Widget **************** -->
-      <div
-        class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/hero-bk07.png')"
-      >
-      </div>
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero-bk07.png')"></div>
     </Fragment>
   </Content>
 
@@ -231,7 +225,7 @@ const metadata = {
         The GOSIM AI Paris 2025 speaker lineup is a diverse group of open-source leaders and developers who are
         passionate about sharing their knowledge and expertise with the community. From foundational models to
         cutting-edge research, our speakers will cover a wide range of topics to help you stay at the forefront of AI
-        innovation. Check out some of our featured speakers below.
+        innovation.
       </p>
     </div>
     <style>

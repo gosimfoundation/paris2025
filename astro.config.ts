@@ -25,7 +25,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   site: 'https://gosimfoundation.github.io/',
-  base: '/paris2025',
+  base: '/',
   output: 'static',
 
   integrations: [tailwind({
