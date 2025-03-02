@@ -44,7 +44,8 @@ const {
             />
           )
         }
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-3xl mx-auto mt-60">
+
           {
             subtitle && (
               <p
@@ -53,21 +54,22 @@ const {
               />
             )
           }
-          {
-            actions && (
-              <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
-                {Array.isArray(actions) ? (
-                  actions.map((action) => (
-                    <div class="flex w-full sm:w-auto">
-                      <Button {...(action || {})} class="w-full sm:mb-0 shadow-none  bg-indigo-900 hover:bg-indigo-500 focus:outline-none" />
-                    </div>
-                  ))
-                ) : (
-                  <Fragment set:html={actions} />
-                )}
-              </div>
-            )
-          }
+                    {
+                      actions && (
+                        <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+                          {Array.isArray(actions) ? (
+                            actions.map((action) => (
+                              <div class="flex w-full sm:w-auto">
+                                <Button {...(action || {})} class="w-full sm:mb-0 shadow-none  bg-indigo-900 hover:bg-indigo-500 focus:outline-none" />
+                              </div>
+                            ))
+                          ) : (
+                            <Fragment set:html={actions} />
+                          )}
+                        </div>
+                      )
+                    }
+
         </div>
         {content && <Fragment set:html={content} />}
       </div>
