@@ -42,16 +42,27 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get Your Spot',
+        text: 'Proposal a Talk',
         href: 'https://paris2025.gosim.org',
         target: '_blank',
         icon: 'tabler:arrow-right',
       },
+      {
+        variant: 'primary',
+        text: 'Appy for Spotlight',
+        href: 'https://spotlight.gosim.org/ai#',
+        target: '_blank',
+        icon: 'tabler:arrow-right',
+      },
+
     ]}
+
+
     bg={`
       <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero-bk06.png')">
       </div>
     `}
+  
   >
   
     <Fragment slot="title">
@@ -189,7 +200,7 @@ const metadata = {
 
   <Content
     title="GOSIM AI Spotlight"
-    tagline="This is a tagline"
+    tagline="Join the Developers of Tomorrow"
     subtitle="Step into the realm of innovation at GOSIM AI Spotlight—where Europe’s rich tradition of creativity meets the cutting edge of open-source AI. Join us in this GOSIM AI co-located event that celebrates collaboration, diversity, and the pioneering spirit of our vibrant continent."
     isReversed
     items={[
@@ -210,7 +221,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-normal dark:text-white sm:text-3xl mb-2">
-        Learning from the Innovators <br /><span class="text-2xl">Launching with GOSIM</span>
+        Learning from the Innovators <br />
       </h3>
     </Fragment>
 
@@ -309,8 +320,9 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+/*       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+ */   src: '~/assets/images/gosim-events.png',  
+      alt: 'GOSIM Events',
     }}
   />
 

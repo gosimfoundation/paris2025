@@ -29,6 +29,7 @@
     "@astrolib/seo": "^1.0.0-beta.8",
     "@fontsource-variable/inter": "^5.1.1",
     "@fontsource-variable/noto-sans": "^5.1.1",
+    "@fontsource/manrope": "^5.2.0",
     "@fontsource/noto-sans": "^5.1.1",
     "@fontsource/poppins": "^5.1.1",
     "@fontsource/roboto": "^5.1.1",
