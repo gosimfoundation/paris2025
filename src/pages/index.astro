@@ -46,6 +46,7 @@ const metadata = {
         href: 'https://paris2025.gosim.org',
         target: '_blank',
         icon: 'tabler:arrow-right',
+
       },
       {
         variant: 'primary',
@@ -53,15 +54,19 @@ const metadata = {
         href: 'https://spotlight.gosim.org/ai#',
         target: '_blank',
         icon: 'tabler:arrow-right',
+        class: 'bg-blue-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded', // Add Tailwind CSS classes here
+
       },
 
     ]}
 
-
-    bg={`
-      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero-bk06.png')">
-      </div>
-    `}
+  bg={`
+    <div class="absolute inset-0">
+      <video autoplay muted loop class="w-full h-full object-cover opacity-50">
+        <source src="/images/gosim-paris.mov" type="video/mp4" />
+      </video>
+    </div>
+  `}
   
   >
   
@@ -293,7 +298,7 @@ const metadata = {
       {
         title: 'September 23-26, 2023: <span class="font-medium">GOSIM Shanghai</span>',
         description:
-          'The essence of the GOSIM workshop revolves around championing and enhancing open-source contributions and utilization.',
+          'The essence of the GOSIM workshop and conference revolves around championing and enhancing open-source contributions and utilization.',
         icon: 'mingcute:tower-2-line',
       },
       {
@@ -305,7 +310,7 @@ const metadata = {
       {
         title: 'October 17-18, 2024: <span class="font-medium">GOSIM Beijing</span>',
         description:
-          'The GOSIM conference is a platform for open-source AI projects to showcase their work and engage with the community.',
+          'The GOSIM Beijing conference, attracted more than 1700 attendees, makes it the largest GOSIM event so far.',
         icon: 'mingcute:palace-2-line',
       },
       {
@@ -315,14 +320,14 @@ const metadata = {
       },
       {
         title: 'May 14-15, 2025: <span class="font-medium">GOSIM Rust Spotlight</span>',
-        description: 'Join us in the co-located event with RustWeek',
+        description: 'Join us in the co-located Spotlight event with RustWeek',
         icon: 'tabler:check',
       },
     ]}
     image={{
-/*       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
- */   src: '~/assets/images/gosim-events.png',  
+      src: '~/assets/images/gosim-events.png',  
       alt: 'GOSIM Events',
+
     }}
   />
 
