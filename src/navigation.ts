@@ -5,24 +5,24 @@ import { getPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    {
-      text: 'Homes',
-      links: [
-        {
-          text: 'Speaker',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Schedule',
-          href: getPermalink('/schedule'),
-        },
-        {
-          text: 'Venue',
-          href: getPermalink('/homes/mobile-app'),
-        },
+    // {
+    //   text: 'Homes',
+    //   links: [
+    //     {
+    //       text: 'Speaker',
+    //       href: getPermalink('/homes/saas'),
+    //     },
+    //     {
+    //       text: 'Schedule',
+    //       href: getPermalink('/schedule'),
+    //     },
+    //     {
+    //       text: 'Venue',
+    //       href: getPermalink('/homes/mobile-app'),
+    //     },
 
-      ],
-    },
+    //   ],
+    // },
     {
       text: 'About',
       href: '#',
