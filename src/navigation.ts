@@ -28,7 +28,7 @@ export const headerData = {
       href: '#',
     },
   ],
-  actions: [{ text: 'Registration', href: 'https://paris2025.gosim.org', target: '_blank' }],
+  actions: [{ text: 'Registration', href: 'https://gosimaiparis.eventbrite.com/', target: '_blank' }],
 };
 
 export const footerData = {
