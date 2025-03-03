@@ -46,30 +46,24 @@ const metadata = {
         href: 'https://paris2025.gosim.org',
         target: '_blank',
         icon: 'tabler:arrow-right',
-
       },
       {
         variant: 'primary',
-        text: 'Appy for Spotlight', 
-        href: 'https://spotlight.gosim.org/ai#',
+        text: 'Apply for Spotlight',
+        href: 'https://spotlight.gosim.org/ai2025',
         target: '_blank',
         icon: 'tabler:arrow-right',
         class: 'bg-blue-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded', // Add Tailwind CSS classes here
-
       },
-
     ]}
-
-  bg={`
-    <div class="absolute inset-0">
-      <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-100">
-        <source src="/images/gosim-paris.mp4" type="video/mp4" />
-      </video>
-    </div>
-  `}
-  
+    bg={`
+      <div class="absolute inset-0">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-100">
+          <source src="/images/gosim-paris.mp4" type="video/mp4" />
+        </video>
+      </div>
+    `}
   >
-  
     <Fragment slot="title">
       <span class="text-accent tracking-tight dark:text-white highlight"> GOSIM AI Paris 2025</span>
     </Fragment>
@@ -78,7 +72,12 @@ const metadata = {
       <span class="hidden sm:inline text-2xl text-white">
         <span class="font-semibold">GOSIM Paris</span>, the City of Light, transforms into the City of Artificial
         Brilliance this May. GOSIM AI 2025 invites visionaries, disruptors, and pioneers to converge at
-        <a href="https://stationf.co/" class="text-accent dark:text-white font-semibold highlight" target="_blank" rel="noopener noreferrer">Station F, a crucible of innovation,</a>
+        <a
+          href="https://stationf.co/"
+          class="text-accent dark:text-white font-semibold highlight"
+          target="_blank"
+          rel="noopener noreferrer">Station F, a crucible of innovation,</a
+        >
         to shape the next frontier of AI.
       </span>
     </Fragment>
@@ -96,7 +95,6 @@ const metadata = {
       { title: 'Demos', amount: '20+' },
       { title: 'Attendants', amount: '500+' },
     ]}
-    
   />
 
   <!-- <div class="mt-16 border-y py-6 border-slate-100">
@@ -107,14 +105,11 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-  <Features2 
+  <Features2
     id="why-to-attend"
     tagline="Why You Need to Attend"
     title="Régale-toi au festin de l’IA"
     subtitle="From foundational models to open-source breakthroughs, this is where ideas ignite. Join leaders and experts as they explore the most pressing challenges and the most promising opportunities in AI, from ethical considerations to the AGI future."
-
-
-
     items={[
       {
         title: 'French Flair, Global Impact',
@@ -153,8 +148,6 @@ const metadata = {
         icon: 'tdesign:play-demo',
       },
     ]}
-    
-
   />
 
   <!-- Features2 Widget ************** -->
@@ -218,14 +211,20 @@ const metadata = {
         description:
           'Socializing with 15 most innovative open-source AI projects from worldwide. Seeking collaborations, partnerships, and sponsroship.',
         icon: 'fluent:desktop-flow-24-regular',
-
-        },
+      },
       {
         title: 'Project Pitch:',
-        description: `Understanding the big idea behind the persona endeavor to conquer the challenges of the future. The future is now, and we're here to make it happen.`,
+        description: `Understanding the big idea behind the personal endeavor to conquer the challenges of the future. The future is now, and we're here to make it happen.`,
         icon: 'fluent:presenter-24-regular',
       },
     ]}
+    callToAction={{
+      variant: 'primary',
+      text: 'Apply Now',
+      href: 'https://spotlight.gosim.org/ai2025',
+      target: '_blank',
+      icon: 'tabler:external-link',
+    }}
     image={{ src: '~/assets/images/spotlight-demo.jpg', alt: 'Spotlight Image' }}
   >
     <Fragment slot="content">
@@ -329,9 +328,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: '~/assets/images/gosim-events.png',  
+      src: '~/assets/images/gosim-events.png',
       alt: 'GOSIM Events',
-
     }}
   />
 
