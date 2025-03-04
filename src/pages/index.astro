@@ -9,6 +9,7 @@ import Gosim from '~/components/widgets/Gosim.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
 import Content from '~/components/widgets/Content.astro';
 // import Announcement from '~/components/widgets/Announcement.astro';
 // import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
@@ -296,26 +297,8 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Past GOSIM Events"
+    title="Upcoming GOSIM Events"
     items={[
-      {
-        title: 'September 23-26, 2023: <span class="font-medium">GOSIM Shanghai</span>',
-        description:
-          'The essence of the GOSIM workshop and conference revolves around championing and enhancing open-source contributions and utilization.',
-        icon: 'mingcute:tower-2-line',
-      },
-      {
-        title: 'May 6, 2023: <span class="font-medium">GOSIM Europe</span>',
-        description:
-          'Held in the Netherlands at Lijm & Cultuur, we saw a huge turnout with multiple different break-out areas.',
-        icon: 'twemoji:flag-netherlands',
-      },
-      {
-        title: 'October 17-18, 2024: <span class="font-medium">GOSIM Beijing</span>',
-        description:
-          'The GOSIM Beijing conference, attracted more than 1700 attendees, makes it the largest GOSIM event so far.',
-        icon: 'mingcute:palace-2-line',
-      },
       {
         title: 'May 6-7, 2025: <span class="font-medium">GOSIM AI Paris</span>',
         description: 'Expected to be our best conference yet, plan to visit us in Paris this year!',
@@ -328,9 +311,35 @@ const metadata = {
       },
     ]}
     image={{
-      src: '~/assets/images/gosim-events.png',
-      alt: 'GOSIM Events',
+      src: '~/assets/images/gosim-events-2025.jpg',
+      alt: 'GOSIM 2025 Events',
     }}
+    title2="Previous Events"
+    items2={[
+      {
+        title: 'September 23-26, 2023: <span class="font-medium">GOSIM Shanghai</span>',
+        description:
+          'The essence of the GOSIM workshop and conference revolves around championing and enhancing open-source contributions and utilization.',
+        icon: 'mingcute:tower-2-line',
+      },
+      {
+        title: 'May 6, 2024: <span class="font-medium">GOSIM Europe</span>',
+        description:
+          'Held in the Netherlands at Lijm & Cultuur, we saw a huge turnout with multiple different break-out areas.',
+        icon: 'twemoji:flag-netherlands',
+      },
+      {
+        title: 'October 17-18, 2024: <span class="font-medium">GOSIM Beijing</span>',
+        description:
+          'The GOSIM Beijing conference, attracted more than 1700 attendees, makes it the largest GOSIM event so far.',
+        icon: 'mingcute:palace-2-line',
+      },
+    ]}
+    image2={{
+      src: '~/assets/images/gosim-events.png',
+      alt: 'GOSIM Past vents',
+    }}
+    showSecondSet={true}
   />
 
   <!-- HighlightedPosts Widget *******
