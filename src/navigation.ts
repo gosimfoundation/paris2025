@@ -1,6 +1,6 @@
 // import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
-import { getPermalink, getAsset } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 
 
 export const headerData = {
@@ -25,7 +25,7 @@ export const headerData = {
     // },
     {
       text: 'About',
-      href: '#',
+      href: '#why-attend',
     },
   ],
   actions: [{ text: 'Registration', href: 'https://gosimaiparis.eventbrite.com/', target: '_blank' }],
