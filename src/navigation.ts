@@ -20,12 +20,20 @@ export const headerData = {
     //       text: 'Venue',
     //       href: getPermalink('/homes/mobile-app'),
     //     },
-
     //   ],
     // },
     {
       text: 'About',
-      href: '#why-attend',
+      links: [
+        {
+          text: 'Why Attend',
+          href: '#why-attend',
+        },
+        {
+          text: 'Be a Volunteer',
+          href: 'https://docs.google.com/forms/d/e/1FAIpQLSc62kJczw7lr-l0JAAbkabeIrrPPAD7OWyzwDopTD0L4HC6EQ/viewform',
+        },
+      ],
     },
   ],
   actions: [{ text: 'Registration', href: 'https://gosimaiparis.eventbrite.com/', target: '_blank' }],
@@ -61,6 +69,7 @@ export const footerData = {
     { ariaLabel: 'GitHub', icon: 'tabler:brand-github', href: 'https://github.com/gosimfoundation' },
     { ariaLabel: 'Mastodon', icon: 'tabler:brand-mastodon', href: 'https://mastodon.social/@gosim' },
     { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@GOSIMFoundation' },
+    { ariaLabel: 'BlueSky', icon: 'tabler:brand-bluesky', href: 'https://bsky.app/profile/gosimfoundation.bsky.social' },
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/gosimfoundation' },
     // { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
