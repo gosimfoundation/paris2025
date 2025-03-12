@@ -8,7 +8,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import { Icon } from 'astro-icon/components';
 
 const metadata = {
-  title: 'Open-Source AI Strategy Forum - GOSIM Paris 2025',
+  title: 'Open-Source AI Strategy Forum - GOSIM AI Paris 2025',
   description:
     'A co-located event bringing together industry leaders, policymakers, and open-source innovators to shape the future of AI strategy and policy',
 };
@@ -17,7 +17,6 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget -->
   <Hero
-
     bg={`
       <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero-bk02.png');">
       </div>
@@ -28,9 +27,8 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="tagline">
-      <span class="text-accent text-xl  dark:text-white highlight normal-case">Co-located Event at GOSIM Paris 2025 on May 5th</span>
+      <span class="text-accent text-xl dark:text-white highlight normal-case">Co-located Event at GOSIM AI Paris 2025 on May 7th</span>
     </Fragment>
-
 
     <Fragment slot="subtitle">
       <div class="  mt-10">
@@ -41,7 +39,7 @@ const metadata = {
     </div>
     </Fragment>
 
-  </Hero>
+</Hero>
 
   <!-- Overview Section -->
   <Content
@@ -50,7 +48,7 @@ const metadata = {
     items={[
       {
         title: 'Date',
-        description: 'May 6, 2025',
+        description: 'May 7, 2025',
         icon: 'tabler:calendar-event',
       },
       {
@@ -239,7 +237,7 @@ Closing Remarks</li>
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-normal dark:text-white sm:text-3xl mb-2">
-        Join the Open-Source AI Strategy Forum at GOSIM Paris 2025
+        Join the Open-Source AI Strategy Forum at GOSIM AI Paris 2025
       </h3>
       <p class="mt-4">
         This exclusive invitation-only event is designed for senior executives, policy experts, and open-source leaders
@@ -266,12 +264,6 @@ Closing Remarks</li>
         >
       </p>
 
-<!--       <div class="mt-8">
-        <a href="https://gosimaiparis.eventbrite.com/" class="btn btn-primary" target="_blank">
-          Register for GOSIM AI Paris 2025
-          <Icon name="tabler:external-link" class="w-5 h-5 ml-1 -mr-1.5" />
-        </a>
-      </div> -->
     </Fragment>
   </Content>
 </Layout>
