@@ -3,7 +3,7 @@ import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import Steps2 from '~/components/widgets/Steps2.astro';
+import Steps from '~/components/widgets/Steps.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import { Icon } from 'astro-icon/components';
 
@@ -17,23 +17,30 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget -->
   <Hero
-    tagline="Co-located Event at GOSIM Paris 2025"
-    image={{
-      src: '~/assets/images/hero-bk07.png',
-      alt: 'Open-Source AI Strategy Forum',
-    }}
+
+    bg={`
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('src/assets/images/hero-bk02.png');">
+      </div>
+    `}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight">Open-Source AI Strategy Forum</span>
+      <span class="text-accent text-7xl tracking-tighter dark:text-white highlight">Open-Source AI Strategy Forum</span>
     </Fragment>
 
-    <Fragment slot="subtitle">
-      A unique gathering of industry leaders, policymakers, and open-source innovators at GOSIM AI Paris 2025. This
-      exclusive workshop will bring together global thought leaders, policymakers, researchers, and open-source AI
-      pioneers to discuss the pressing challenges and opportunities in the open-source AI landscape. The event will
-      culminate in a networking dinner cruise along the Seine River, providing a scenic and informal setting for further
-      discussions and collaborations.
+    <Fragment slot="tagline">
+      <span class="text-accent text-xl  dark:text-white highlight normal-case">Co-located Event at GOSIM Paris 2025 on May 5th</span>
     </Fragment>
+
+
+    <Fragment slot="subtitle">
+      <div class="  mt-10">
+
+      <span class="hidden sm:inline text-1xl text-gray-600">
+        <span class="font-semibold"> A unique gathering of industry leaders, policymakers, and open-source innovators at GOSIM AI Paris 2025. This exclusive workshop will bring together global thought leaders, policymakers, researchers, and open-source AI pioneers to discuss the pressing challenges and opportunities in the open-source AI landscape. The event will culminate in a networking dinner cruise along the Seine River, providing a scenic and informal setting for further discussions and collaborations.
+      </span>
+    </div>
+    </Fragment>
+
   </Hero>
 
   <!-- Overview Section -->
@@ -57,10 +64,8 @@ const metadata = {
         icon: 'tabler:layout-dashboard',
       },
     ]}
-    image={{
-      src: '~/assets/images/spotlight-demo.jpg',
-      alt: 'Workshop Overview Image',
-    }}
+  image={{ src: '~/assets/images/ai-forum.png', alt: 'Forum Image', class: 'opacity-80' }}
+
   >
     <Fragment slot="content">
       <p class="mt-4 text-lg">
@@ -114,9 +119,10 @@ const metadata = {
   </Features2>
 
   <!-- Workshop Agenda -->
-  <Steps2
+  <Steps
     title="Workshop Agenda"
     subtitle="A full-day program featuring expert-led discussions, strategic planning sessions, and networking opportunities."
+
     items={[
       {
         title: 'Morning Session: Setting the Stage',
@@ -163,6 +169,7 @@ Closing Remarks</li>
         icon: 'tabler:moon-stars',
       },
     ]}
+
   />
 
   <!-- Workshop Outputs -->
@@ -225,8 +232,9 @@ Closing Remarks</li>
   <Content
     title="Workshop Invitation"
     image={{
-      src: '~/assets/images/gosim-events.png',
+      src: '~/assets/images/forum-invite.png',
       alt: 'GOSIM Open-Source AI Strategy Forum',
+      class: 'mt-20'
     }}
   >
     <Fragment slot="content">
@@ -258,12 +266,12 @@ Closing Remarks</li>
         >
       </p>
 
-      <div class="mt-8">
+<!--       <div class="mt-8">
         <a href="https://gosimaiparis.eventbrite.com/" class="btn btn-primary" target="_blank">
           Register for GOSIM AI Paris 2025
           <Icon name="tabler:external-link" class="w-5 h-5 ml-1 -mr-1.5" />
         </a>
-      </div>
+      </div> -->
     </Fragment>
   </Content>
 </Layout>
