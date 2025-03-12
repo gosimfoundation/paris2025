@@ -26,7 +26,7 @@ export const headerData = {
       text: 'Co-Located Events',
       links: [
             {
-          text: 'Global Open-Source AI Strategy Forum',
+          text: 'Open-Source AI Strategy Forum',
           href: '/os-ai-strategy-forum',
         }
       ],
