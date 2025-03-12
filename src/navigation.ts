@@ -10,18 +10,27 @@ export const headerData = {
     //   links: [
     //     {
     //       text: 'Speaker',
-    //       href: getPermalink('/homes/saas'),
+    //       href: "#",
     //     },
     //     {
     //       text: 'Schedule',
-    //       href: getPermalink('/schedule'),
+    //       href: "#",
     //     },
     //     {
-    //       text: 'Venue',
-    //       href: getPermalink('/homes/mobile-app'),
+    //       text: 'Venue - Station F',
+    //       href: "https://stationf.co/",
     //     },
     //   ],
     // },
+    {
+      text: 'Co-Located Events',
+      links: [
+            {
+          text: 'Global Open-Source AI Strategy Forum',
+          href: '/os-ai-strategy-forum',
+        }
+      ],
+    },
     {
       text: 'About',
       links: [
@@ -67,10 +76,11 @@ export const footerData = {
   ],
   socialLinks: [
     { ariaLabel: 'GitHub', icon: 'tabler:brand-github', href: 'https://github.com/gosimfoundation' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/gosim-foundation' },
     { ariaLabel: 'Mastodon', icon: 'tabler:brand-mastodon', href: 'https://mastodon.social/@gosim' },
-    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@GOSIMFoundation' },
     { ariaLabel: 'BlueSky', icon: 'tabler:brand-bluesky', href: 'https://bsky.app/profile/gosimfoundation.bsky.social' },
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/gosimfoundation' },
+    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@GOSIMFoundation' },
     // { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
