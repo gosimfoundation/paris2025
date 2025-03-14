@@ -5,23 +5,23 @@ import { getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    // {
-    //   text: 'Homes',
-    //   links: [
-    //     {
-    //       text: 'Speaker',
-    //       href: "#",
-    //     },
-    //     {
-    //       text: 'Schedule',
-    //       href: "#",
-    //     },
-    //     {
-    //       text: 'Venue - Station F',
-    //       href: "https://stationf.co/",
-    //     },
-    //   ],
-    // },
+    {
+      text: 'Homes',
+      links: [
+        {
+          text: 'Speakers',
+          href: "#speakers",
+        },
+        {
+          text: 'Tracks',
+          href: "#tracks",
+        },
+        {
+          text: 'Venue - Station F',
+          href: "https://stationf.co/",
+        },
+      ],
+    },
     {
       text: 'Co-Located Events',
       links: [
