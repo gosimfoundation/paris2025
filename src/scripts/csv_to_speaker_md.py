@@ -4,7 +4,10 @@ import re
 from datetime import datetime
 
 # Define the input and output directories
-track = 'ai-infra'
+# track = 'ai-infra'
+# track = 'ai-models'
+# track = 'embodied-ai'
+track = 'ai-apps'
 csv_file = track+'.csv'
 output_dir = './speakers'
 
@@ -51,11 +54,11 @@ with open(csv_file, 'r', encoding='utf-8') as file:
         # Create markdown content
         content = f"""---
 draft: true
-name: "{speaker_name}"
+name: "{file_name}"
 title: "{title}"
 avatar: {{
     src: "/images/speakers/{slug}.png",
-    alt: "{speaker_name}"
+    alt: "{file_name}"
 }}
 topic: "{topic}"
 org: "{organization}"
