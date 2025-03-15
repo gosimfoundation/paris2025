@@ -25,10 +25,14 @@ export const headerData = {
     {
       text: 'Co-Located Events',
       links: [
-            {
+        {
+          text: 'GOSIM AI Spotlight',
+          href: 'https://spotlight.gosim.org/ai2025',
+        },
+        {
           text: 'Open-Source AI Strategy Forum',
           href: '/os-ai-strategy-forum',
-        }
+        },
       ],
     },
     {
