@@ -7,7 +7,7 @@ avatar: {
     alt: "马教授"
 }
 topic: ""
-org: "鹤思（CraneSched）https://github.com/PKUHPC/CraneSched"
+org: "CraneSched"
 track: "ai-infra"
 publishDate: "2025-03-14 02:00"
 ---

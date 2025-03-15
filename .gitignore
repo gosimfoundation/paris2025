@@ -22,3 +22,5 @@ pnpm-debug.log*
 pnpm-lock.yaml
 
 .astro
+src/scripts/speakers
+src/scripts/*.csv

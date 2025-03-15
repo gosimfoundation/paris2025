@@ -1,7 +1,7 @@
 ---
-draft: false
+draft: true
 name: "Wang Yanzhi"
-title: "Associate Professor,  Electrical and Computer Engineering of Northwestern University"
+title: "Associate Professor, Electrical and Computer Engineering of Northwestern University"
 avatar: {
     src: "/images/speakers/yanzhi-wang.png",
     alt: "Wang Yanzhi"

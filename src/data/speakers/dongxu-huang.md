@@ -1,0 +1,13 @@
+---
+draft: false
+name: "Dongxu Huang"
+title: "Founder & CEO of PingCAP"
+avatar: {
+    src: "/images/speakers/dongxu-huang.png",
+    alt: "Dongxu Huang"
+}
+topic: "Database for Agents Memory, The Right Way"
+org: "PingCAP"
+track: "ai-apps"
+publishDate: "2025-03-14 16:49"
+---
