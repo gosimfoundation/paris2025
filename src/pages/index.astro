@@ -14,11 +14,12 @@ import Content from '~/components/widgets/Content.astro';
 // import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 // import CallToAction from '~/components/widgets/CallToAction.astro';
-// import Testimonials from '~/components/widgets/Testimonials.astro';
+// import Testimonials from '~/components/Testimonials.astro';
+import Highlight from '~/components/Highlight.astro';
 
 import { getCollection } from 'astro:content';
 import { Picture } from 'astro:assets';
-import Container from '~/components/widgets/container.astro';
+import Container from '~/components/widgets/Container.astro';
 // import Sectionhead from '~/components/widgets/Sectionhead.astro';
 
 // Filter team entries with 'draft: false' & date before current date
@@ -66,7 +67,7 @@ const metadata = {
   >
     <Fragment slot="title">
       <span class="text-pink-200 text-6x md:text-7xl lg:text-8xl tracking-tight dark:text-white highlight">
-        GOSIM AI Paris</span>
+        GOSIM AI Paris</span>    
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -102,13 +103,13 @@ const metadata = {
     ]}
   />
 
-  <!-- <div class="mt-16 border-y py-6 border-slate-100">
+<!-- <div class="mt-16 border-y py-6 border-slate-100">
     <Sponsors />
-  </div> -->
+</div>  -->
 
   <!-- <Schedule /> -->
 
-  <!-- Features Widget *************** -->
+  <Highlight /> 
 
   <Features2
     id="why-attend"
