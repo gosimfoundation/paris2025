@@ -1,9 +1,9 @@
 ---
-draft: true
+draft: false
 name: "Markus Tavenrath"
 title: "Principal Engineer Developer Technology at NVIDIA"
 avatar: {
-    src: "/images/speakers/markus-tavenrath.png",
+    src: "/images/speakers/generic-profile.png",
     alt: "Markus Tavenrath"
 }
 topic: ""

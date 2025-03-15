@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Rik Arends"
-title: "Co-Founder"
+title: "Co-Founder of Makepad"
 avatar: {
     src: "/images/speakers/rik-arends.png",
     alt: "Rik Arends"

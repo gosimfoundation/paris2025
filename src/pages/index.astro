@@ -84,7 +84,7 @@ const metadata = {
         >
         to shape the next frontier of AI.
       </span>
-      
+
     </div>
     </Fragment>
   </Hero>
@@ -159,6 +159,7 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
+    id="tracks"
     title="6 Conference Tracks"
     subtitle="The innovation is already here. Are you?"
     tagline="Joining the the world of open-source AI"
@@ -207,6 +208,7 @@ const metadata = {
   </Features2>
 
   <Content
+    id="spotlight"
     title="GOSIM AI Spotlight"
     tagline="Join the Developers of Tomorrow"
     subtitle="Step into the realm of innovation at GOSIM AI Spotlight—where Europe’s rich tradition of creativity meets the cutting edge of open-source AI. Join us in this GOSIM AI co-located event that celebrates collaboration, diversity, and the pioneering spirit of our vibrant continent."
@@ -246,8 +248,8 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <Container>
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+  <Container id="speakers">
+    <div id="speakers" class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">Empowering the world with Open-Source.</h2>
       <p class="text-lg leading-relaxed text-slate-500">
         The GOSIM AI Paris 2025 speaker lineup is a diverse group of open-source leaders and developers who are
@@ -284,14 +286,21 @@ const metadata = {
               <div class="absolute inset-0 bg-gradient-to-b from-white/30 to-black/70 opacity-50 rounded-lg group-hover:from-black/50 group-hover:to-black/90 group-hover:opacity-70 transition-all duration-500" />
             </div>
 
-            <div class="absolute inset-0 flex flex-col items-center justify-end text-center text-white transition-all duration-500 rounded-lg group-hover:justify-start">
-              <h2 class="text-lg">{speakerEntry.data.name}</h2>
-              <h3 class="text-sm opacity-100 group-hover:opacity-0 transition-opacity duration-0">
-                {speakerEntry.data.title}
-              </h3>
-              <p class="text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-100">
-                {speakerEntry.data.topic}
-              </p>
+            <div class="absolute inset-0 flex flex-col items-center p-4 text-center text-white transition-all duration-500 rounded-lg">
+              <h2 class="text-md translate-y-[-100%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 pt-2">
+                {speakerEntry.data.name}
+              </h2>
+              <div class="w-full mt-auto transition-all duration-300">
+                <h2 class="text-md group-hover:opacity-0 transition-opacity duration-300">{speakerEntry.data.name}</h2>
+                <h3 class="text-xs opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                  {speakerEntry.data.title}
+                </h3>
+              </div>
+              {speakerEntry.data.topic && (
+                <p class="text-xs font-light opacity-0 group-hover:opacity-100 absolute bottom-4 left-0 right-0 px-4 transition-opacity duration-300">
+                  {speakerEntry.data.topic}
+                </p>
+              )}
             </div>
           </div>
         ))

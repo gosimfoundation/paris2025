@@ -7,7 +7,7 @@ avatar: {
     src: "/images/speakers/sebastian-crozet.png",
     alt: "Sebastian Crozet"
 }
-topic: ""
+topic: "WGMath"
 org: "WGMath"
 track: "ai-infra"
 publishDate: "2025-03-14 02:00"
