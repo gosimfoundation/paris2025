@@ -1,0 +1,57 @@
+{
+  "schedule": [
+    {
+      "date": "2023-10-27",
+      "timezone": "Central Standard Time (GMT-6)",
+      "morning": [
+        {
+          "time": "07:00 - 08:00",
+          "title": "Opening remarks",
+          "description": "Welcoming attendees...",
+          "speakers": ["jese-leos"]
+        },
+        {
+          "time": "08:00 - 09:00",
+          "title": "Bergside LLC: Controlling the video traffic flows",
+          "description": "With an open scripting format...",
+          "speakers": ["lana-byrd"]
+        },
+        {
+          "time": "10:00 - 11:00",
+          "title": "Flowbite - An Open Framework for Forensic Watermarking",
+          "description": "Start developing with...",
+          "speakers": ["michael-gough", "karen-nelson"]
+        },
+        {
+          "time": "11:00 - 11:30",
+          "title": "Coffee & networking",
+          "sponsors": ["spotify", "microsoft", "slack", "salesforce"]
+        }
+      ],
+      "afternoon": [
+        {
+          "time": "13:00 - 14:00",
+          "title": "Women in Streaming Media Networking",
+          "description": "GOSIM is an inclusive gathering designed to provide a welcoming space for open-source AI projects, both large and small, to share knowledge, learn from each other, and collaborate. It serves as a hub where developers, researchers, enthusiasts, and industry sponsors can come together to exchange ideas, refine their work, and form meaningful connections.",
+          "speakers": ["leslie-livingston"]
+        },
+        {
+          "time": "14:00 - 15:00",
+          "title": "Exploring the balance between customer...",
+          "description": "It is easier and also cheaper...",
+          "speakers": ["helene-engels", "roberta-casas"]
+        },
+        {
+          "time": "15:00 - 15:30",
+          "title": "Coffee Break",
+          "sponsors": ["spotify", "microsoft", "slack", "salesforce"]
+        },
+        {
+          "time": "17:00 - 19:00",
+          "title": "Drinks & networking",
+          "sponsors": ["meta", "amazon", "salesforce"]
+        }
+      ]
+    }
+  ]
+}

@@ -20,6 +20,7 @@ import Highlight from '~/components/Highlight.astro';
 import { getCollection } from 'astro:content';
 import { Picture } from 'astro:assets';
 import Container from '~/components/widgets/Container.astro';
+import GosimSchedule from '~/components/GosimSchedule.astro';
 // import Sectionhead from '~/components/widgets/Sectionhead.astro';
 
 // Filter team entries with 'draft: false' & date before current date
@@ -107,9 +108,10 @@ const metadata = {
     <Sponsors />
 </div>  -->
 
-  <!-- <Schedule /> -->
 
   <Highlight /> 
+
+  <!-- <GosimSchedule /> -->
 
   <Features2
     id="why-attend"
