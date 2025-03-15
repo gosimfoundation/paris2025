@@ -7,10 +7,22 @@
       "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
     },
     {
+      "id": "leslie-livingston",
+      "name": "Leslie Livingston",
+      "role": "CEO & Co Founder Meta",
+      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/leslie-livingston.png"
+    },
+    {
       "id": "lana-byrd",
       "name": "Lana Byrd",
       "role": "Video Engineer",
       "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/lana-byrd.png"
+    },
+    {
+      "id": "joseph-mcfall",
+      "name": "Joseph McFall",
+      "role": "Engineer at Google",
+      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
     },
     {
       "id": "michael-gough",
@@ -23,6 +35,24 @@
       "name": "Karen Nelson",
       "role": "React developer at Flowbite",
       "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+    },
+    {
+      "id": "robert-brown",
+      "name": "Robert Brown",
+      "role": "Videolan",
+      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/robert-brown.png"
+    },
+    {
+      "id": "helene-engels",
+      "name": "Helene Engels",
+      "role": "Senior VP Amazon",
+      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png"
+    },
+    {
+      "id": "roberta-casas",
+      "name": "Roberta Casas",
+      "role": "Head Designer Amazon",
+      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
     },
     {
       "id": "thomas-lean",
@@ -41,30 +71,6 @@
       "name": "Bonnie Green",
       "role": "Python Developer",
       "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-    },
-    {
-      "id": "leslie-livingston",
-      "name": "Leslie Livingston",
-      "role": "CEO & Co Founder Meta",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/leslie-livingston.png"
-    },
-    {
-      "id": "helene-engels",
-      "name": "Helene Engels",
-      "role": "Senior VP Amazon",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png"
-    },
-    {
-      "id": "roberta-casas",
-      "name": "Roberta Casas",
-      "role": "Head Designer Amazon",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
-    },
-    {
-      "id": "robert-brown",
-      "name": "Robert Brown",
-      "role": "Videolan",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/robert-brown.png"
     }
   ]
 }
