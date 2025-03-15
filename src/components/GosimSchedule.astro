@@ -1,0 +1,8 @@
+---
+import EventSchedule from '~/components/widgets/EventSchedule.astro';
+import scheduleData from '~/data/db/gosim-schedule.json';
+const schedule = scheduleData.schedule;
+
+---
+
+<EventSchedule schedule={schedule} />
