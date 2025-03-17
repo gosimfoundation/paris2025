@@ -3,6 +3,8 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Gosim from '~/components/widgets/Gosim.astro';
+// import ShadcnDemo from '~/components/ShadcnDemo.astro';
+// import AnimataDemo from '~/components/AnimataDemo.astro';
 
 // import Schedule from '~/components/widgets/Schedule.astro';
 // import Sponsors from '~/components/widgets/Sponsors.astro';
@@ -22,6 +24,9 @@ import { Picture } from 'astro:assets';
 import Container from '~/components/widgets/Container.astro';
 import GosimSchedule from '~/components/GosimSchedule.astro';
 // import Sectionhead from '~/components/widgets/Sectionhead.astro';
+
+
+
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedSpeakers = await getCollection('speaker', ({ data }) => {
@@ -92,11 +97,19 @@ const metadata = {
   <!-- GOSIM Widget ******************* -->
   <Gosim />
 
+ <!--  
+  <ShadcnDemo />
+ -->
+
+ <!--  
+  <AnimataDemo />
+ -->
+
   <!-- Stats Widget ****************** -->
 
   <Stats
     stats={[
-      { title: 'Conference Tracks', amount: '6' },
+      { title: 'Conference Tracks', amount: '5' },
       { title: 'Talks', amount: '50+' },
       { title: 'Demos', amount: '20+' },
       { title: 'Attendees', amount: '500+' },
@@ -111,7 +124,7 @@ const metadata = {
 
    <!-- <GosimSchedule /> -->
 
-  
+   
   <Features2
     id="why-attend"
     tagline="Why You Need to Attend"
@@ -121,7 +134,7 @@ const metadata = {
       {
         title: 'French Flair, Global Impact',
         description:
-          'Showcasing the harmony between open-source ingenuity and technological excellence—immerse yourself in a world where savoir-faire meets groundbreaking innovation, setting the stage for a global AI revolution across six visionary tracks.',
+          'Showcasing the harmony between open-source ingenuity and technological excellence—immerse yourself in a world where savoir-faire meets groundbreaking innovation, setting the stage for a global AI revolution across 5 visionary tracks.',
         icon: 'mdi:paris',
       },
       {
@@ -161,7 +174,7 @@ const metadata = {
 
   <Features2
     id="tracks"
-    title="6 Conference Tracks"
+    title="5 Conference Tracks"
     subtitle="The innovation is already here. Are you?"
     tagline="Joining the the world of open-source AI"
     items={[
@@ -189,12 +202,12 @@ const metadata = {
           'Propelling Open-Source Robotics Forward: Innovating community-driven robot design, expanding openly available datasets, developing advanced visual language models, and shaping policy frameworks that define the future of autonomous systems.',
         icon: 'tabler:robot-face',
       },
-      {
+/*       {
         title: 'AI for Science',
         description:
           'Pushing the Frontiers of Scientific Discovery with AI: Empowering breakthroughs in mathematics, material design, drug discovery, astrophysics, and computer systems through open-source AI research.',
         icon: 'streamline:ai-science-spark',
-      },
+      }, */
       {
         title: 'PyTorch Day',
         description:
