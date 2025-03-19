@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 name: "Jinwei Gu"
 title: "Principal Research Scientist at NVIDIA"
 avatar: {
