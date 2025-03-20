@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Dongxu Huang"
-title: "Founder & CEO of PingCAP"
+title: "Founder & CTO of PingCAP"
 avatar: {
     src: "/images/speakers/dongxu-huang.png",
     alt: "Dongxu Huang"
