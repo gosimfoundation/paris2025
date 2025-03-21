@@ -3,159 +3,186 @@
     {
       "id": "day-1",
       "title": "Day 1: Wednesday, Oct 12th",
-      "events": [
+      "tracks": [
         {
-          "time": "9:00 - 10:00",
-          "title": "Opening Remarks",
-          "description": "Kick off the conference with welcoming addresses from our organizers and key sponsors. Learn about the event structure and network with fellow attendees.",
-          "speakers": ["jese-leos"],
-          "sponsors": ["spotify"]
+          "id": "track-1",
+          "title": "Track 1: Main Stage",
+          "events": [
+            {
+              "time": "9:00 - 10:00",
+              "title": "Opening Remarks",
+              "description": "Kick off the conference with welcoming addresses from our organizers. Learn about the event structure and network with fellow attendees.",
+              "speakers": ["jese-leos"]
+            },
+            {
+              "time": "10:00 - 11:00",
+              "title": "Future of Streaming Technologies",
+              "description": "Explore cutting-edge developments in streaming protocols, codecs, and delivery networks that are shaping the next generation of media distribution.",
+              "speakers": ["michael-gough"]
+            },
+            {
+              "time": "11:30 - 12:30",
+              "title": "Building Scalable Video Architectures",
+              "description": "Deep dive into architectural patterns for handling high-volume video traffic with minimal latency and maximum reliability.",
+              "speakers": ["lana-byrd", "robert-brown"]
+            }
+          ]
         },
         {
-          "time": "10:00 - 11:00",
-          "title": "Future of Streaming Technologies",
-          "description": "Explore cutting-edge developments in streaming protocols, codecs, and delivery networks that are shaping the next generation of media distribution.",
-          "speakers": ["michael-gough"]
+          "id": "track-2",
+          "title": "Track 2: Developer Zone",
+          "events": [
+            {
+              "time": "9:00 - 10:30",
+              "title": "Hands-on Coding Session",
+              "description": "Practical workshop for implementing streaming protocols in modern web applications.",
+              "speakers": ["robert-brown"]
+            },
+            {
+              "time": "11:00 - 12:30",
+              "title": "Performance Optimization Techniques",
+              "description": "Learn how to optimize your streaming applications for maximum performance.",
+              "speakers": ["helene-engels"]
+            }
+          ]
         },
         {
-          "time": "11:00 - 11:30",
-          "title": "Morning Coffee Break",
-          "description": "Network with peers while enjoying refreshments sponsored by our partners.",
-          "sponsors": ["google", "microsoft"]
+          "id": "track-3",
+          "title": "Track 3: Business & Strategy",
+          "events": [
+            {
+              "time": "9:00 - 10:00",
+              "title": "Monetization Strategies",
+              "description": "Exploring different revenue models for streaming platforms.",
+              "speakers": ["bonnie-green"]
+            },
+            {
+              "time": "10:30 - 12:00",
+              "title": "Market Analysis & Trends",
+              "description": "Deep dive into current market trends and future predictions for the streaming industry.",
+              "speakers": ["thomas-lean"]
+            }
+          ]
         },
         {
-          "time": "11:30 - 12:30",
-          "title": "Building Scalable Video Architectures",
-          "description": "Deep dive into architectural patterns for handling high-volume video traffic with minimal latency and maximum reliability.",
-          "speakers": ["lana-byrd", "robert-brown"]
+          "id": "track-4",
+          "title": "Track 4: Innovation Lab",
+          "events": [
+            {
+              "time": "9:30 - 11:00",
+              "title": "Emerging Technologies Showcase",
+              "description": "Demonstrations of cutting-edge technologies in the streaming space.",
+              "speakers": ["neil-sims"]
+            },
+            {
+              "time": "11:30 - 13:00",
+              "title": "Future of Interactive Content",
+              "description": "Exploring the possibilities of interactive streaming experiences.",
+              "speakers": ["roberta-casas"]
+            }
+          ]
         },
         {
-          "time": "12:30 - 14:00",
-          "title": "Lunch & Networking",
-          "description": "Enjoy a catered lunch while connecting with industry professionals and visiting sponsor booths.",
-          "sponsors": ["salesforce", "sap"]
-        },
-        {
-          "time": "14:00 - 15:00",
-          "title": "AI in Content Moderation",
-          "description": "Learn how machine learning models are being deployed for real-time content analysis and moderation at scale.",
-          "speakers": ["helene-engels"]
-        },
-        {
-          "time": "15:00 - 16:00",
-          "title": "Open Source Multimedia Tools",
-          "description": "Panel discussion on the growing ecosystem of open source tools for video processing and streaming.",
-          "speakers": ["roberta-casas", "neil-sims"]
-        },
-        {
-          "time": "16:00 - 17:00",
-          "title": "Q&A with Industry Leaders",
-          "description": "Interactive session where attendees can ask questions to our panel of streaming technology experts.",
-          "speakers": ["thomas-lean", "bonnie-green"]
-        },
-        {
-          "time": "17:00 - 19:00",
-          "title": "Welcome Reception",
-          "description": "Unwind after the first day with drinks and hors d'oeuvres while networking with speakers and sponsors.",
-          "sponsors": ["slack", "spotify"]
+          "id": "track-5",
+          "title": "Track 5: Workshop Arena",
+          "events": [
+            {
+              "time": "9:00 - 12:00",
+              "title": "Full-Stack Streaming Platform Workshop",
+              "description": "Comprehensive hands-on session covering all aspects of building a streaming platform.",
+              "speakers": ["karen-nelson", "joseph-mcfall"]
+            }
+          ]
         }
       ]
     },
     {
       "id": "day-2",
       "title": "Day 2: Thursday, Oct 13th",
-      "events": [
+      "tracks": [
         {
-          "time": "9:00 - 10:30",
-          "title": "Advanced Encoding Techniques Workshop",
-          "description": "Hands-on workshop covering the latest developments in video compression and adaptive bitrate streaming technologies.",
-          "speakers": ["joseph-mcfall", "karen-nelson"]
+          "id": "track-1",
+          "title": "Track 1: Main Stage",
+          "events": [
+            {
+              "time": "9:00 - 10:30",
+              "title": "Advanced Encoding Techniques Workshop",
+              "description": "Hands-on workshop covering the latest developments in video compression and adaptive bitrate streaming technologies.",
+              "speakers": ["joseph-mcfall", "karen-nelson"]
+            },
+            {
+              "time": "11:00 - 12:30",
+              "title": "Cloud-Based Media Processing",
+              "description": "Case studies on leveraging cloud infrastructure for distributed media processing workflows.",
+              "speakers": ["leslie-livingston"]
+            }
+          ]
         },
         {
-          "time": "10:30 - 11:00",
-          "title": "Morning Break",
-          "sponsors": ["google"]
+          "id": "track-2",
+          "title": "Track 2: Developer Zone",
+          "events": [
+            {
+              "time": "9:00 - 10:30",
+              "title": "API Design for Streaming Services",
+              "description": "Best practices for creating robust and scalable APIs for streaming platforms.",
+              "speakers": ["michael-gough"]
+            },
+            {
+              "time": "11:00 - 12:30",
+              "title": "Real-time Analytics Implementation",
+              "description": "Techniques for implementing real-time analytics in streaming applications.",
+              "speakers": ["lana-byrd"]
+            }
+          ]
         },
         {
-          "time": "11:00 - 12:30",
-          "title": "Cloud-Based Media Processing",
-          "description": "Case studies on leveraging cloud infrastructure for distributed media processing workflows.",
-          "speakers": ["leslie-livingston"]
+          "id": "track-3",
+          "title": "Track 3: Business & Strategy",
+          "events": [
+            {
+              "time": "9:30 - 11:00",
+              "title": "Content Licensing Strategies",
+              "description": "Understanding the complex landscape of content licensing for streaming platforms.",
+              "speakers": ["bonnie-green"]
+            },
+            {
+              "time": "11:30 - 13:00",
+              "title": "Building Global Audiences",
+              "description": "Strategies for expanding your streaming service to international markets.",
+              "speakers": ["jese-leos"]
+            }
+          ]
         },
         {
-          "time": "12:30 - 14:00",
-          "title": "Lunch & Roundtables",
-          "description": "Participate in themed discussion tables hosted by industry experts.",
-          "sponsors": ["microsoft"]
+          "id": "track-4",
+          "title": "Track 4: Innovation Lab",
+          "events": [
+            {
+              "time": "9:00 - 11:00",
+              "title": "AI in Content Recommendation",
+              "description": "Leveraging artificial intelligence to enhance content discovery and recommendations.",
+              "speakers": ["helene-engels"]
+            },
+            {
+              "time": "11:30 - 13:00",
+              "title": "Blockchain for Content Rights",
+              "description": "Exploring how blockchain technology can revolutionize content rights management.",
+              "speakers": ["robert-brown"]
+            }
+          ]
         },
         {
-          "time": "14:00 - 15:30",
-          "title": "Live Streaming Masterclass",
-          "description": "Comprehensive guide to setting up and maintaining high-quality live streams across multiple platforms.",
-          "speakers": ["lana-byrd", "robert-brown"]
-        },
-        {
-          "time": "15:30 - 16:00",
-          "title": "Afternoon Break",
-          "sponsors": ["salesforce"]
-        },
-        {
-          "time": "16:00 - 17:30",
-          "title": "Content Protection Strategies",
-          "description": "Exploring DRM solutions, watermarking technologies, and piracy prevention measures.",
-          "speakers": ["michael-gough", "helene-engels"]
-        },
-        {
-          "time": "17:30 - 19:00",
-          "title": "Sponsor Showcase",
-          "description": "Interactive demonstrations of the latest tools and services from our sponsors.",
-          "sponsors": ["sap", "slack"]
-        }
-      ]
-    },
-    {
-      "id": "day-3",
-      "title": "Day 3: Friday, Oct 14th",
-      "events": [
-        {
-          "time": "9:00 - 10:30",
-          "title": "Analytics & Viewer Insights",
-          "description": "Leveraging viewer data to improve content delivery and audience engagement strategies.",
-          "speakers": ["roberta-casas", "thomas-lean"]
-        },
-        {
-          "time": "10:30 - 11:00",
-          "title": "Morning Break",
-          "sponsors": ["spotify"]
-        },
-        {
-          "time": "11:00 - 12:30",
-          "title": "Accessibility in Streaming",
-          "description": "Implementing closed captions, audio descriptions, and other accessibility features at scale.",
-          "speakers": ["bonnie-green", "karen-nelson"]
-        },
-        {
-          "time": "12:30 - 14:00",
-          "title": "Networking Lunch",
-          "sponsors": ["google", "salesforce"]
-        },
-        {
-          "time": "14:00 - 15:30",
-          "title": "Emerging Technologies Panel",
-          "description": "Discussion on VR streaming, holographic displays, and other future-facing technologies.",
-          "speakers": ["jese-leos", "leslie-livingston", "neil-sims"]
-        },
-        {
-          "time": "15:30 - 16:00",
-          "title": "Closing Remarks",
-          "description": "Conference wrap-up and announcements for next year's event.",
-          "speakers": ["michael-gough"]
-        },
-        {
-          "time": "16:00 - 18:00",
-          "title": "Farewell Reception",
-          "description": "Celebrate the conclusion of the conference with drinks and casual networking.",
-          "sponsors": ["microsoft", "sap"]
+          "id": "track-5",
+          "title": "Track 5: Workshop Arena",
+          "events": [
+            {
+              "time": "9:00 - 13:00",
+              "title": "End-to-End Streaming Security Workshop",
+              "description": "Comprehensive workshop on securing all aspects of your streaming platform.",
+              "speakers": ["thomas-lean", "neil-sims"]
+            }
+          ]
         }
       ]
     }

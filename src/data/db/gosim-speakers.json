@@ -1,76 +1,202 @@
 {
   "speakers": [
     {
-      "id": "jese-leos",
-      "name": "Jese Leos",
-      "role": "CEO & Co Founder Bergside LLC",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+      "id": "ville-kuosmanen",
+      "name": "Ville Kuosmanen",
+      "role": "Founde at Voyage Robotics",
+      "avatar": "/images/speakers/generic-profile.png"
     },
     {
-      "id": "leslie-livingston",
-      "name": "Leslie Livingston",
-      "role": "CEO & Co Founder Meta",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/leslie-livingston.png"
+      "id": "rik-arends",
+      "name": "Rik Arends",
+      "role": "Co-Founder of Makepad",
+      "avatar": "/images/speakers/rik-arends.png"
     },
     {
-      "id": "lana-byrd",
-      "name": "Lana Byrd",
-      "role": "Video Engineer",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/lana-byrd.png"
+      "id": "guohao-li",
+      "name": "Guohao Li",
+      "role": "Founder of Camel-AI.org",
+      "avatar": "/images/speakers/guohao-li.png"
     },
     {
-      "id": "joseph-mcfall",
-      "name": "Joseph McFall",
-      "role": "Engineer at Google",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+      "id": "yiran-zhong",
+      "name": "Yiran Zhong",
+      "role": "Director of Research at MiniMax",
+      "avatar": "/images/speakers/yiran-zhong.png"
     },
     {
-      "id": "michael-gough",
-      "name": "Micheal Gough",
-      "role": "CTO at Flowbite",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gough.png"
+      "id": "dongxu-huang",
+      "name": "Dongxu Huang",
+      "role": "Founder & CTO of PingCAP",
+      "avatar": "/images/speakers/dongxu-huang.png"
     },
     {
-      "id": "karen-nelson",
-      "name": "Karen Nelson",
-      "role": "React developer at Flowbite",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+      "id": "chao-jia",
+      "name": "Chao Jia",
+      "role": "Vice President of Mianbi Intelligence",
+      "avatar": "/images/speakers/chao-jia.png"
     },
     {
-      "id": "robert-brown",
-      "name": "Robert Brown",
-      "role": "Videolan",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/robert-brown.png"
+      "id": "xinrui-liu",
+      "name": "Xinrui Liu",
+      "role": "VP of Dify",
+      "avatar": "/images/speakers/xinrui-liu.jpg"
     },
     {
-      "id": "helene-engels",
-      "name": "Helene Engels",
-      "role": "Senior VP Amazon",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png"
+      "id": "angelo-corsaro",
+      "name": "Angelo Corsaro",
+      "role": "CEO and CTO of ZettaScale Technology",
+      "avatar": "/images/speakers/angelo-corsaro.png"
     },
     {
-      "id": "roberta-casas",
-      "name": "Roberta Casas",
-      "role": "Head Designer Amazon",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
+      "id": "markus-tavenrath",
+      "name": "Markus Tavenrath",
+      "role": "Principal Engineer Developer Technology at NVIDIA",
+      "avatar": "/images/speakers/markus-tavenrath.jpg"
     },
     {
-      "id": "thomas-lean",
-      "name": "Thomas Lean",
-      "role": "COO Salesforce",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png"
+      "id": "ruixue-ding",
+      "name": "Ruixue Ding",
+      "role": "Algorithm Expert at Alibaba Tongyi Lab",
+      "avatar": "/images/speakers/ruixue-ding.jpg"
     },
     {
-      "id": "neil-sims",
-      "name": "Neil Sims",
-      "role": "CTO Salesforce",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png"
+      "id": "tianyu-chen",
+      "name": "Tianyu Chen",
+      "role": "Ph.D Candidate at Peking University",
+      "avatar": "/images/speakers/tianyu-chen.jpeg"
     },
     {
-      "id": "bonnie-green",
-      "name": "Bonnie Green",
-      "role": "Python Developer",
-      "avatar": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+      "id": "yingfeng-zhang",
+      "name": "Yingfeng Zhang",
+      "role": "Co-Founder of InfiniFlow",
+      "avatar": "/images/speakers/yingfeng-zhang.png"
+    },
+    {
+      "id": "fan-wang",
+      "name": "Fan Wang",
+      "role": "Researcher at the Embodied AI Center, AIRS",
+      "avatar": "/images/speakers/fan-wang.png"
+    },
+    {
+      "id": "matt-white",
+      "name": "Matt White",
+      "role": "GM of AI of Linux Foundation",
+      "avatar": "/images/speakers/matt-white.png"
+    },
+    {
+      "id": "jinwei-gu",
+      "name": "Jinwei Gu",
+      "role": "Principal Research Scientist at NVIDIA",
+      "avatar": "/images/speakers/jinwei-gu.png"
+    },
+    {
+      "id": "yinping-ma",
+      "name": "Yinping Ma",
+      "role": "Engineer at Peking University",
+      "avatar": "/images/speakers/generic-profile.png"
+    },
+    {
+      "id": "yanzhi-wang",
+      "name": "Yanzhi Wang",
+      "role": "Associate Professor, Electrical and Computer Engineering of Northwestern University",
+      "avatar": "/images/speakers/yanzhi-wang.png"
+    },
+    {
+      "id": "min-zhang",
+      "name": "Min Zhang",
+      "role": "EU Director of Unitree Robotics",
+      "avatar": "/images/speakers/generic-profile.png"
+    },
+    {
+      "id": "guillaume-blaquiere",
+      "name": "Guillaume Blaquiere",
+      "role": "Group Data Architect Carrefour",
+      "avatar": "/images/speakers/guillaume-blaquiere.png"
+    },
+    {
+      "id": "sebastien-crozet",
+      "name": "Sebastien Crozet",
+      "role": "Co-founder and CTO Foresight Mining Software Corporation",
+      "avatar": "/images/speakers/sebastien-crozet.png"
+    },
+    {
+      "id": "xiao-han",
+      "name": "Han Xiao",
+      "role": "Founder & CEO of JinA AI",
+      "avatar": "/images/speakers/han-xiao.png"
+    },
+    {
+      "id": "philipp-oppermann",
+      "name": "Philipp Oppermann",
+      "role": "Dora Project Lead",
+      "avatar": "/images/speakers/philipp-oppermann.png"
+    },
+    {
+      "id": "shanghang-zhang",
+      "name": "Shanghang Zhang",
+      "role": "Assistant Professor at the School of Computer Science, Peking University",
+      "avatar": "/images/speakers/shanghang-zhang.png"
+    },
+    {
+      "id": "james-yang",
+      "name": "James Yang",
+      "role": "Speaker",
+      "avatar": "/images/speakers/james-yang.png"
+    },
+    {
+      "id": "chi-wang",
+      "name": "Chi Wang",
+      "role": "Research Scientist at Google DeepMind",
+      "avatar": "/images/speakers/chi-wang.png"
+    },
+    {
+      "id": "wei-jia",
+      "name": "Wei Jia",
+      "role": "Director at Zhipu AI",
+      "avatar": "/images/speakers/generic-profile.png"
+    },
+    {
+      "id": "guang-liu",
+      "name": "Guang Liu",
+      "role": "Head of OpenSeek",
+      "avatar": "/images/speakers/guang-liu.png"
+    },
+    {
+      "id": "wang-yanzhi",
+      "name": "Wang Yanzhi",
+      "role": "Associate Professor, Electrical and Computer Engineering of Northwestern University",
+      "avatar": "/images/speakers/yanzhi-wang.png"
+    },
+    {
+      "id": "guilherme-penedo",
+      "name": "Guilherme Penedo",
+      "role": "ML Research Engineer at Hugging Face",
+      "avatar": "/images/speakers/guilherme-penedo.png"
+    },
+    {
+      "id": "sirui-hong",
+      "name": "Sirui Hong",
+      "role": "Co-Founder of OpenManus",
+      "avatar": "/images/speakers/sirui-hong.jpg"
+    },
+    {
+      "id": "michael-yuan",
+      "name": "Michael Yuan",
+      "role": "Speaker",
+      "avatar": "/images/speakers/michael-yuan.png"
+    },
+    {
+      "id": "yonghua-lin",
+      "name": "Yonghua Lin",
+      "role": "VP of BAAI",
+      "avatar": "/images/speakers/yonghua-lin.png"
+    },
+    {
+      "id": "jason-li",
+      "name": "Jason Li",
+      "role": "Senior VP at CSDN",
+      "avatar": "/images/speakers/jason-li.png"
     }
   ]
 }

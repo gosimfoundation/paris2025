@@ -22,11 +22,7 @@ import Highlight from '~/components/Highlight.astro';
 import { getCollection } from 'astro:content';
 import { Picture } from 'astro:assets';
 import Container from '~/components/widgets/Container.astro';
-import GosimSchedule from '~/components/GosimSchedule.astro';
 // import Sectionhead from '~/components/widgets/Sectionhead.astro';
-
-
-
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedSpeakers = await getCollection('speaker', ({ data }) => {
@@ -97,13 +93,8 @@ const metadata = {
   <!-- GOSIM Widget ******************* -->
   <Gosim />
 
- <!--  
-  <ShadcnDemo />
- -->
-
- <!--  
-  <AnimataDemo />
- -->
+  <!-- <ShadcnDemo /> -->
+  <!-- <AnimataDemo /> -->
 
   <!-- Stats Widget ****************** -->
 
@@ -122,9 +113,8 @@ const metadata = {
 
   <Highlight />
 
-   <!-- <GosimSchedule /> -->
+  <!-- <GosimSchedule /> -->
 
-   
   <Features2
     id="why-attend"
     tagline="Why You Need to Attend"
@@ -202,7 +192,7 @@ const metadata = {
           'Propelling Open-Source Robotics Forward: Innovating community-driven robot design, expanding openly available datasets, developing advanced visual language models, and shaping policy frameworks that define the future of autonomous systems.',
         icon: 'tabler:robot-face',
       },
-/*       {
+      /*       {
         title: 'AI for Science',
         description:
           'Pushing the Frontiers of Scientific Discovery with AI: Empowering breakthroughs in mathematics, material design, drug discovery, astrophysics, and computer systems through open-source AI research.',

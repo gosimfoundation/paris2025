@@ -6,7 +6,7 @@ avatar: {
     src: "/images/speakers/yanzhi-wang.png",
     alt: "Yanzhi Wang"
 }
-topic: "Demysifying LLM training --- towards fully open-source LLM from pre-training to reinforcement learning"
+topic: "Demysifying LLM training - towards fully open-source LLM from pre-training to reinforcement learning"
 org: "Northeastern University"
 track: "ai-models"
 publishDate: "2025-03-14 16:49"
