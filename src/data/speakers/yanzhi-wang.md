@@ -6,8 +6,8 @@ avatar: {
     src: "/images/speakers/yanzhi-wang.png",
     alt: "Yanzhi Wang"
 }
-topic: "Moxin LLM & Ominix for Real-Time Chat AI"
-org: "Moxin LLM"
+topic: "Demysifying LLM training --- towards fully open-source LLM from pre-training to reinforcement learning"
+org: "Northeastern University"
 track: "ai-models"
-publishDate: "2025-03-14 14:43"
+publishDate: "2025-03-14 16:49"
 ---
