@@ -121,7 +121,7 @@
       "avatar": "/images/speakers/sebastien-crozet.png"
     },
     {
-      "id": "xiao-han",
+      "id": "han-xiao",
       "name": "Han Xiao",
       "role": "Founder & CEO of JinA AI",
       "avatar": "/images/speakers/han-xiao.png"
@@ -130,7 +130,7 @@
       "id": "philipp-oppermann",
       "name": "Philipp Oppermann",
       "role": "Dora Project Lead",
-      "avatar": "/images/speakers/philipp-oppermann.png"
+      "avatar": "/images/speakers/philipp-oppermann.jpeg"
     },
     {
       "id": "shanghang-zhang",
@@ -172,7 +172,7 @@
       "id": "guilherme-penedo",
       "name": "Guilherme Penedo",
       "role": "ML Research Engineer at Hugging Face",
-      "avatar": "/images/speakers/guilherme-penedo.png"
+      "avatar": "/images/speakers/guilherme-penedo.jpg"
     },
     {
       "id": "sirui-hong",
