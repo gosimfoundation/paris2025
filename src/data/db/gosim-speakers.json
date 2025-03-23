@@ -3,8 +3,14 @@
     {
       "id": "ville-kuosmanen",
       "name": "Ville Kuosmanen",
-      "role": "Founde at Voyage Robotics",
-      "avatar": "/images/speakers/generic-profile.png"
+      "role": "Founder at Voyage Robotics",
+      "avatar": "/images/speakers/ville-kuosmanen.jpg"
+    },
+    {
+      "id": "martino-russi",
+      "name": "Martino Russi",
+      "role": "Embodied Robotics Engineer at Hugging Face",
+      "avatar": "/images/speakers/martino-russi.jpeg"
     },
     {
       "id": "rik-arends",
@@ -49,6 +55,12 @@
       "avatar": "/images/speakers/angelo-corsaro.png"
     },
     {
+      "id": "shiwei-liu",
+      "name": "Shiwei Liu",
+      "role": "Royal Society Newton International Fellow",
+      "avatar": "/images/speakers/shiwei-liu.jpg"
+    },
+    {
       "id": "markus-tavenrath",
       "name": "Markus Tavenrath",
       "role": "Principal Engineer Developer Technology at NVIDIA",
@@ -67,10 +79,22 @@
       "avatar": "/images/speakers/tianyu-chen.jpeg"
     },
     {
+      "id": "sebastien-crozet",
+      "name": "Sebastien Crozet",
+      "role": "Co-founder and CTO Foresight Mining Software Corporation",
+      "avatar": "/images/speakers/sebastien-crozet.png"
+    },
+    {
       "id": "yingfeng-zhang",
       "name": "Yingfeng Zhang",
       "role": "Co-Founder of InfiniFlow",
       "avatar": "/images/speakers/yingfeng-zhang.png"
+    },
+    {
+      "id": "zhipeng-huang",
+      "name": "Zhipeng Huang",
+      "role": "Director of AI Open Source",
+      "avatar": "/images/speakers/zhipeng-huang.jpg"
     },
     {
       "id": "fan-wang",
@@ -91,10 +115,16 @@
       "avatar": "/images/speakers/jinwei-gu.png"
     },
     {
+      "id": "greg-schoeninger",
+      "name": "Greg Schoeninger",
+      "role": "CEO at Oxen.ai",
+      "avatar": "/images/speakers/greg-schoeninger.jpeg"
+    },
+    {
       "id": "yinping-ma",
       "name": "Yinping Ma",
       "role": "Engineer at Peking University",
-      "avatar": "/images/speakers/generic-profile.png"
+      "avatar": "/images/speakers/yinping-ma.jpg"
     },
     {
       "id": "yanzhi-wang",
@@ -103,22 +133,22 @@
       "avatar": "/images/speakers/yanzhi-wang.png"
     },
     {
+      "id": "cailean-osborne-phd",
+      "name": "Cailean Osborne, PhD",
+      "role": "Senior Researcher at Linux Foundation",
+      "avatar": "/images/speakers/cailean-osborne-phd.png"
+    },
+    {
       "id": "min-zhang",
       "name": "Min Zhang",
       "role": "EU Director of Unitree Robotics",
-      "avatar": "/images/speakers/generic-profile.png"
+      "avatar": "/images/speakers/min-zhang.png"
     },
     {
       "id": "guillaume-blaquiere",
       "name": "Guillaume Blaquiere",
       "role": "Group Data Architect Carrefour",
       "avatar": "/images/speakers/guillaume-blaquiere.png"
-    },
-    {
-      "id": "sebastien-crozet",
-      "name": "Sebastien Crozet",
-      "role": "Co-founder and CTO Foresight Mining Software Corporation",
-      "avatar": "/images/speakers/sebastien-crozet.png"
     },
     {
       "id": "han-xiao",
@@ -129,7 +159,7 @@
     {
       "id": "philipp-oppermann",
       "name": "Philipp Oppermann",
-      "role": "Dora Project Lead",
+      "role": "Dora Project Lead at DORA+Zenoh",
       "avatar": "/images/speakers/philipp-oppermann.jpeg"
     },
     {
@@ -141,7 +171,7 @@
     {
       "id": "james-yang",
       "name": "James Yang",
-      "role": "Speaker",
+      "role": "Speaker at UTSC",
       "avatar": "/images/speakers/james-yang.png"
     },
     {
@@ -183,7 +213,7 @@
     {
       "id": "michael-yuan",
       "name": "Michael Yuan",
-      "role": "Speaker",
+      "role": "Speaker at LlamaEdge",
       "avatar": "/images/speakers/michael-yuan.png"
     },
     {

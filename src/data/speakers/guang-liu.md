@@ -3,7 +3,7 @@ draft: false
 name: "Guang Liu"
 title: "Head of OpenSeek"
 avatar: {
-    src: "/images/speakers/guang-liu.png",
+    src: "/images/speakers/guang-liu.jpg",
     alt: "Guang Liu"
 }
 topic: "OpenSeek: Collaborative Innovation for Next-Gen Models"

@@ -42,7 +42,7 @@
             },
             {
               "time": "14:00pm - 14:40pm",
-              "title": "Decode DeepSeek",
+              "title": "Decode DeepSeek: the Technological innovation and Its Influence on AI Ecosystem",
               "description": "",
               "speakers": [
                 "jason-li"
@@ -112,17 +112,13 @@
               "time": "10:40am - 11:20am",
               "title": "Pytorch",
               "description": "",
-              "speakers": [
-                "matt-white"
-              ]
+              "speakers": ["matt-white"]
             },
             {
               "time": "11:20am - 12:00pm",
               "title": "BAAI FlagGem",
               "description": "",
-              "speakers": [
-                "yonghua-lin"
-              ]
+              "speakers": ["yonghua-lin"]
             },
             {
               "time": "12:00pm - 14:00pm",
@@ -140,9 +136,7 @@
               "time": "14:40pm - 15:20pm",
               "title": "Open-source intelligent computing integrated management and utilization foundational software - SCOW and CraneSched",
               "description": "",
-              "speakers": [
-                "yinping-ma"
-              ]
+              "speakers": ["yinping-ma"]
             },
             {
               "time": "15:20pm - 15:40pm",
@@ -154,17 +148,13 @@
               "time": "15:40pm - 16:20pm",
               "title": "Datasets and Infrastructure for DeepSeek-R1 Style Reinforcement Learning (GRPO)",
               "description": "",
-              "speakers": [
-                "greg-schoeninger"
-              ]
+              "speakers": ["greg-schoeninger"]
             },
             {
               "time": "16:20pm - 17:00pm",
               "title": "Make your LLMs serverless",
               "description": "",
-              "speakers": [
-                "guillaume-blaquiere"
-              ]
+              "speakers": ["guillaume-blaquiere"]
             },
             {
               "time": "17:00pm - 18:00pm",
@@ -200,9 +190,7 @@
               "time": "11:20am - 12:00pm",
               "title": "Zenoh Project",
               "description": "",
-              "speakers": [
-                "angelo-corsaro"
-              ]
+              "speakers": ["angelo-corsaro"]
             },
             {
               "time": "12:00pm - 14:00pm",
@@ -212,19 +200,15 @@
             },
             {
               "time": "14:00pm - 14:40pm",
-              "title": "DORA+Zenoh",
+              "title": "Distributed dataflows in Dora using Zenoh",
               "description": "",
-              "speakers": [
-                "philipp-oppermann"
-              ]
+              "speakers": ["philipp-oppermann"]
             },
             {
               "time": "14:40pm - 15:20pm",
               "title": "Integrating Feedback and Learning in Closed Loop: Toward General-Purpose Embodied AI Systems",
               "description": "",
-              "speakers": [
-                "fan-wang"
-              ]
+              "speakers": ["fan-wang"]
             },
             {
               "time": "15:20pm - 15:40pm",
@@ -236,9 +220,7 @@
               "time": "15:40pm - 16:20pm",
               "title": "Building robotic applications with open-source VLA models",
               "description": "",
-              "speakers": [
-                "ville-kuosmanen"
-              ]
+              "speakers": ["ville-kuosmanen"]
             },
             {
               "time": "17:00pm - 18:00pm",
@@ -274,17 +256,13 @@
               "time": "10:40am - 11:20am",
               "title": "AG2: The Open-Source AgentOS for Agentic AI",
               "description": "",
-              "speakers": [
-                "chi-wang"
-              ]
+              "speakers": ["chi-wang"]
             },
             {
               "time": "11:20am - 12:00pm",
               "title": "Dify",
               "description": "",
-              "speakers": [
-                "xinrui-liu"
-              ]
+              "speakers": ["xinrui-liu"]
             },
             {
               "time": "12:00pm - 14:00pm",
@@ -296,9 +274,7 @@
               "time": "14:00pm - 14:40pm",
               "title": "Makepad AI Coding",
               "description": "",
-              "speakers": [
-                "rik-arends"
-              ]
+              "speakers": ["rik-arends"]
             },
             {
               "time": "15:20pm - 15:40pm",
@@ -346,9 +322,7 @@
               "time": "10:40am - 11:20am",
               "title": "OpenSeek: Collaborative Innovation for Next-Gen Models",
               "description": "",
-              "speakers": [
-                "guang-liu"
-              ]
+              "speakers": ["guang-liu"]
             },
             {
               "time": "11:20am - 12:00pm",
@@ -370,11 +344,9 @@
             },
             {
               "time": "14:40pm - 15:20pm",
-              "title": "Moxin LLM",
+              "title": "Demysifying LLM training --- towards fully open-source LLM from pre-training to reinforcement learning",
               "description": "",
-              "speakers": [
-                "yanzhi-wang"
-              ]
+              "speakers": ["yanzhi-wang"]
             },
             {
               "time": "15:20pm - 15:40pm",
@@ -390,11 +362,9 @@
             },
             {
               "time": "16:20pm - 17:00pm",
-              "title": "https://shiweiliuiiiiiii.github.io/",
+              "title": "The Curse of Depth in Large Language Models",
               "description": "",
-              "speakers": [
-                "shiwei-liu"
-              ]
+              "speakers": ["shiwei-liu"]
             },
             {
               "time": "17:00pm - 18:00pm",
@@ -430,9 +400,7 @@
               "time": "11:20am - 12:00pm",
               "title": "Khronos ML",
               "description": "",
-              "speakers": [
-                "markus-tavenrath"
-              ]
+              "speakers": ["markus-tavenrath"]
             },
             {
               "time": "12:00pm - 14:00pm",
@@ -444,9 +412,7 @@
               "time": "14:00pm - 14:40pm",
               "title": "OminiX Enables Conversational AI",
               "description": "",
-              "speakers": [
-                "yanzhi-wang"
-              ]
+              "speakers": ["yanzhi-wang"]
             },
             {
               "time": "15:20pm - 15:40pm",
@@ -458,9 +424,7 @@
               "time": "15:40pm - 16:20pm",
               "title": "WGMath",
               "description": "",
-              "speakers": [
-                "sebastien-crozet"
-              ]
+              "speakers": ["sebastien-crozet"]
             },
             {
               "time": "16:20pm - 17:00pm",
@@ -502,17 +466,13 @@
               "time": "10:40am - 11:20am",
               "title": "How to Build Your Humanoid",
               "description": "",
-              "speakers": [
-                "martino-russi"
-              ]
+              "speakers": ["martino-russi"]
             },
             {
               "time": "11:20am - 12:00pm",
               "title": "RoboMIND: The First Universal Multi-Ontology Embodied Intelligence Dataset",
               "description": "",
-              "speakers": [
-                "shanghang-zhang"
-              ]
+              "speakers": ["shanghang-zhang"]
             },
             {
               "time": "12:00pm - 14:00pm",
@@ -522,15 +482,13 @@
             },
             {
               "time": "14:00pm - 14:40pm",
-              "title": "Unitree G1 Dataset",
+              "title": "G1 Open Source dataset and Humanoid Robot from Unitree Robotics",
               "description": "",
-              "speakers": [
-                "min-zhang"
-              ]
+              "speakers": ["min-zhang"]
             },
             {
               "time": "14:40pm - 15:20pm",
-              "title": "OpenLoogn",
+              "title": "OpenLoong",
               "description": "",
               "speakers": []
             },
@@ -586,17 +544,13 @@
               "time": "10:40am - 11:20am",
               "title": "Camel.ai",
               "description": "",
-              "speakers": [
-                "guohao-li"
-              ]
+              "speakers": ["guohao-li"]
             },
             {
               "time": "11:20am - 12:00pm",
               "title": "OpenManus: Empowering LLM-based Agent Applications via Framework and Capability Evolution",
               "description": "",
-              "speakers": [
-                "sirui-hong"
-              ]
+              "speakers": ["sirui-hong"]
             },
             {
               "time": "12:00pm - 14:00pm",
@@ -606,19 +560,15 @@
             },
             {
               "time": "14:00pm - 14:40pm",
-              "title": "RAGFlow",
+              "title": "RAGFlow: Leading the Open-Source Revolution in Enterprise-Grade Retrieval-Augmented Generation",
               "description": "",
-              "speakers": [
-                "yingfeng-zhang"
-              ]
+              "speakers": ["yingfeng-zhang"]
             },
             {
               "time": "14:40pm - 15:20pm",
               "title": "Database for Agents Memory, The Right Way",
               "description": "",
-              "speakers": [
-                "dongxu-huang"
-              ]
+              "speakers": ["dongxu-huang"]
             },
             {
               "time": "15:20pm - 15:40pm",
@@ -630,9 +580,7 @@
               "time": "15:40pm - 16:20pm",
               "title": "Jina.ai",
               "description": "",
-              "speakers": [
-                "han-xiao"
-              ]
+              "speakers": ["han-xiao"]
             },
             {
               "time": "17:00pm - 18:00pm",

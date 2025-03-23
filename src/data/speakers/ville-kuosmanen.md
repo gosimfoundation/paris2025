@@ -3,7 +3,7 @@ draft: true
 name: "Ville Kuosmanen"
 title: "Founde at Voyage Robotics"
 avatar: {
-    src: "/images/speakers/ville-kuosmanen.png",
+    src: "/images/speakers/ville-kuosmanen.jpg",
     alt: "Ville Kuosmanen"
 }
 topic: "Building robotic applications with open-source VLA models"
