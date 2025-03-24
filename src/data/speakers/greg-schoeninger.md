@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Greg Schoeninger"
-title: "CEO"
+title: "CEO at Oxen.ai"
 avatar: {
   src: "/images/speakers/greg-schoeninger.jpeg",
   alt: "Greg Schoeninger"

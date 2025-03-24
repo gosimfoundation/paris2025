@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Martino Russi"
-title: "Embodied Robotics Engineer"
+title: "Embodied Robotics Engineer at Hugging Face"
 avatar: {
   src: "/images/speakers/martino-russi.jpeg",
   alt: "Martino Russi"
