@@ -227,6 +227,12 @@
       "name": "Jason Li",
       "role": "Senior VP at CSDN",
       "avatar": "/images/speakers/jason-li.png"
+    },
+    {
+      "id": "yaowei-zheng",
+      "name": "Yaowei Zheng",
+      "role": "Ph.D. Student at Beihang University",
+      "avatar": "/images/speakers/yaowei-zheng.jpeg"
     }
   ]
 }
