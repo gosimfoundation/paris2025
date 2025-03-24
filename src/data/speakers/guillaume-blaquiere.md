@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 name: "Guillaume Blaquiere"
 title: "Group Data Architect
 Carrefour"

@@ -10,32 +10,15 @@ const getSpeaker = (id) => speakersData.speakers.find(s => s.id === id);
 <section class="aliased dark:bg-gray-900 p-0">
   <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6 lg:py-4">
     <div class="mt-8 lg:mt-12">
-      <!-- Day Tabs -->
-      <div class="flex flex-wrap justify-center gap-2" role="tablist" aria-label="Days">
-        {days.map((day, index) => (
-          <button
-            role="tab"
-            aria-selected={index === 0 ? "true" : "false"}
-            data-day-id={day.id}
-            class={`px-4 py-2 rounded-3xl text-sm font-medium transition-colors
-                ${index === 0
-                ? 'bg-blue-600 text-white'
-                : 'text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800'}`}
-            >
+      <!-- Sequential Days Display -->
+      {days.map((day, dayIndex) => (
+        <div class="mb-12">
+          <!-- Day Header -->
+          <h2 class="text-2xl font-bold text-center text-gray-900 dark:text-white mb-6">
             {day.title}
-          </button>
-        ))}
-      </div>
+          </h2>
 
-      <!-- Day Panels -->
-      <div class="mt-6">
-        {days.map((day, dayIndex) => (
-          <div
-            role="tabpanel"
-            data-panel-id={day.id}
-            class={`px-4 py-4 md:px-6 lg:px-8 rounded-lg border border-gray-100 bg-gray-50 dark:border-gray-700 dark:bg-gray-800
-              ${dayIndex === 0 ? 'block' : 'hidden'}`}
-          >
+          <div class="px-4 py-4 md:px-6 lg:px-8 rounded-lg border border-gray-100 bg-gray-50 dark:border-gray-700 dark:bg-gray-800">
             <!-- Track Tabs -->
             <div class="flex flex-wrap justify-center gap-2 mb-6" role="tablist" aria-label="Tracks">
               {day.tracks.map((track, trackIndex) => (
@@ -118,8 +101,8 @@ const getSpeaker = (id) => speakersData.speakers.find(s => s.id === id);
               ))}
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
 
     <div class="mt-8 text-center">
@@ -136,62 +119,19 @@ const getSpeaker = (id) => speakersData.speakers.find(s => s.id === id);
   <script is:inline>
     // Wait for document to be fully loaded
     document.addEventListener('DOMContentLoaded', () => {
-      // Set up tab navigation system
-      const setupTabs = () => {
-        // Day tab navigation
-        const dayTabs = document.querySelectorAll('[role="tab"][data-day-id]');
-
-        const selectDayTab = (selectedTab) => {
-          const dayId = selectedTab.dataset.dayId;
-
-          // Update all day tabs
-          dayTabs.forEach(tab => {
-            // Reset styles for all tabs
-            tab.classList.remove('bg-blue-600', 'text-white');
-            tab.classList.add('text-gray-500', 'dark:text-gray-400', 'hover:bg-gray-100', 'dark:hover:bg-gray-800');
-            tab.setAttribute('aria-selected', 'false');
-          });
-
-          // Style the selected tab
-          selectedTab.classList.add('bg-blue-600', 'text-white');
-          selectedTab.classList.remove('text-gray-500', 'dark:text-gray-400', 'hover:bg-gray-100', 'dark:hover:bg-gray-800');
-          selectedTab.setAttribute('aria-selected', 'true');
-
-          // Update panels
-          const dayPanels = document.querySelectorAll('[role="tabpanel"][data-panel-id]');
-          dayPanels.forEach(panel => panel.classList.add('hidden'));
-
-          // Show selected panel
-          const selectedPanel = document.querySelector(`[data-panel-id="${dayId}"]`);
-          if (selectedPanel) {
-            selectedPanel.classList.remove('hidden');
-
-            // Auto-select first track
-            const firstTrackTab = selectedPanel.querySelector('[role="tab"][data-track-id]');
-            if (firstTrackTab) {
-              selectTrackTab(firstTrackTab);
-            }
-          }
-        };
-
-        // Add event listeners to day tabs
-        dayTabs.forEach(tab => {
-          tab.addEventListener('click', () => selectDayTab(tab));
-        });
-
+      // Set up tab navigation for tracks only
+      const setupTrackTabs = () => {
         // Track tab navigation
         const selectTrackTab = (selectedTab) => {
           const trackId = selectedTab.dataset.trackId;
           const dayId = selectedTab.dataset.dayId;
           const combinedId = `${dayId}-${trackId}`;
 
-          // Get current day panel
-          const currentDayPanel = document.querySelector(`[data-panel-id="${dayId}"]`);
-          if (!currentDayPanel) return;
+          // Get all track tabs within the same day
+          const dayTrackTabs = document.querySelectorAll(`[role="tab"][data-day-id="${dayId}"]`);
 
           // Update track tabs within this day
-          const trackTabs = currentDayPanel.querySelectorAll('[role="tab"][data-track-id]');
-          trackTabs.forEach(tab => {
+          dayTrackTabs.forEach(tab => {
             tab.classList.remove('bg-indigo-600', 'text-white');
             tab.classList.add('text-gray-600', 'bg-gray-200', 'dark:text-gray-300', 'dark:bg-gray-700', 'hover:bg-gray-300', 'dark:hover:bg-gray-600');
             tab.setAttribute('aria-selected', 'false');
@@ -202,30 +142,35 @@ const getSpeaker = (id) => speakersData.speakers.find(s => s.id === id);
           selectedTab.classList.remove('text-gray-600', 'bg-gray-200', 'hover:bg-gray-300', 'dark:text-gray-300', 'dark:bg-gray-700', 'dark:hover:bg-gray-600');
           selectedTab.setAttribute('aria-selected', 'true');
 
-          // Update track panels
-          const trackPanels = currentDayPanel.querySelectorAll('[role="tabpanel"][data-track-panel-id]');
+          // Get all track panels for this day
+          const trackPanels = document.querySelectorAll(`[role="tabpanel"][data-track-panel-id^="${dayId}-"]`);
+
+          // Hide all track panels
           trackPanels.forEach(panel => panel.classList.add('hidden'));
 
           // Show selected track panel
-          const selectedTrackPanel = currentDayPanel.querySelector(`[data-track-panel-id="${combinedId}"]`);
+          const selectedTrackPanel = document.querySelector(`[data-track-panel-id="${combinedId}"]`);
           if (selectedTrackPanel) {
             selectedTrackPanel.classList.remove('hidden');
           }
         };
 
-        // Add event listeners to track tabs
+        // Add event listeners to all track tabs
         document.querySelectorAll('[role="tab"][data-track-id]').forEach(tab => {
           tab.addEventListener('click', () => selectTrackTab(tab));
         });
 
-        // Initialize the first day tab on page load
-        if (dayTabs.length > 0) {
-          selectDayTab(dayTabs[0]);
-        }
+        // Initialize all first track tabs for each day
+        document.querySelectorAll('[role="tablist"][aria-label="Tracks"]').forEach(trackList => {
+          const firstTrackTab = trackList.querySelector('[role="tab"]');
+          if (firstTrackTab) {
+            selectTrackTab(firstTrackTab);
+          }
+        });
       };
 
-      // Initialize the tabs
-      setupTabs();
+      // Initialize the track tabs
+      setupTrackTabs();
     });
   </script>
 </section>

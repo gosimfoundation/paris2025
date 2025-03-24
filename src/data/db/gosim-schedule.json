@@ -2,7 +2,7 @@
   "days": [
     {
       "id": "day-1",
-      "title": "Day 1: May 6th",
+      "title": "Day 1: Tuesday, May 6th",
       "tracks": [
         {
           "id": "ai-models",
@@ -300,7 +300,7 @@
     },
     {
       "id": "day-2",
-      "title": "Day 2: May 7th",
+      "title": "Day 2: Wednesday, May 7th",
       "tracks": [
         {
           "id": "ai-models",
