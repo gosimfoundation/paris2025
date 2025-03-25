@@ -29,7 +29,7 @@ const Countdown = () => {
 
   return (
     <span className="ml-2 font-bold text-yellow-500">
-      Ony {daysLeft} day{daysLeft !== 1 ? 's' : ''} Away!
+      Only {daysLeft} day{daysLeft !== 1 ? 's' : ''} away!
     </span>
   );
 };

@@ -26,12 +26,16 @@ export const headerData = {
       text: 'Co-Located Events',
       links: [
         {
-          text: 'GOSIM AI Spotlight',
-          href: 'https://spotlight.gosim.org/ai2025',
+          text: 'PyTorch AI Paris Day',
+          href: '/',
         },
         {
           text: 'Open-Source AI Strategy Forum',
           href: '/os-ai-strategy-forum',
+        },
+        {
+          text: 'GOSIM AI Spotlight',
+          href: 'https://spotlight.gosim.org/ai2025',
         },
       ],
     },
@@ -49,7 +53,7 @@ export const headerData = {
       ],
     },
   ],
-  actions: [{ text: 'Registration', href: 'https://gosimaiparis.eventbrite.com/', target: '_blank' }],
+  actions: [{ text: 'Early Bird Tickets', href: 'https://gosimaiparis.eventbrite.com/', target: '_blank' }],
 };
 
 export const footerData = {
