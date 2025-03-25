@@ -9,10 +9,6 @@ export const headerData = {
       text: 'Homes',
       links: [
         {
-          text: 'Speakers',
-          href: "#speakers",
-        },
-        {
           text: 'Tracks',
           href: "#tracks",
         },
@@ -21,6 +17,10 @@ export const headerData = {
           href: "https://stationf.co/",
         },
       ],
+    },
+    {
+      text: 'Speakers',
+      href: "#speakers",
     },
     {
       text: 'Co-Located Events',
