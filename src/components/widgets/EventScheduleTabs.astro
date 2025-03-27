@@ -46,56 +46,113 @@ const getSpeaker = (id) => speakersData.speakers.find(s => s.id === id);
                   class={`${trackIndex === 0 ? 'block' : 'hidden'}`}
                 >
                   <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    {track.events.map(event => (
-                      <article class="p-4 space-y-3 bg-white rounded-md border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                        <div class="flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400">
-                          <Icon name="tabler:clock" class="w-4 h-4" />
-                          <span>{event.time}</span>
-                        </div>
-
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                          {event.title}
-                        </h3>
-
-                        {/* Event Description */}
-                        {event.description && (
-                          <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                            {event.description}
-                          </p>
-                        )}
-
-                        {/* Speakers Section */}
-                        {event.speakers?.length > 0 && (
-                          <div class="space-y-4 mt-3">
-                            {event.speakers.map(speakerId => {
-                              const speaker = getSpeaker(speakerId);
-                              return speaker ? (
-                                <div class="flex items-center gap-3">
-                                  <img
-                                    src={speaker.avatar}
-                                    alt={speaker.name}
-                                    class="w-12 h-12 rounded-full object-cover"
-                                    loading="lazy"
-                                  />
-                                  <div>
-                                    <p class="text-gray-900 dark:text-white">{speaker.name}</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">{speaker.role}</p>
-                                  </div>
-                                </div>
-                              ) : (
-                                <div class="flex items-center gap-3">
-                                  <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700"></div>
-                                  <div>
-                                    <p class="text-gray-900 dark:text-white">Unknown Speaker</p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">Speaker not found</p>
-                                  </div>
-                                </div>
-                              );
-                            })}
+                    {/* Left column - first half of events */}
+                    <div class="space-y-4">
+                      {track.events.slice(0, Math.ceil(track.events.length / 2)).map(event => (
+                        <article class="p-4 space-y-3 bg-white rounded-md border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                          <div class="flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400">
+                            <Icon name="tabler:clock" class="w-4 h-4" />
+                            <span>{event.time}</span>
                           </div>
-                        )}
-                      </article>
-                    ))}
+
+                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                            {event.title}
+                          </h3>
+
+                          {/* Event Description */}
+                          {event.description && (
+                            <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                              {event.description}
+                            </p>
+                          )}
+
+                          {/* Speakers Section */}
+                          {event.speakers?.length > 0 && (
+                            <div class="space-y-4 mt-3">
+                              {event.speakers.map(speakerId => {
+                                const speaker = getSpeaker(speakerId);
+                                return speaker ? (
+                                  <div class="flex items-center gap-3">
+                                    <img
+                                      src={speaker.avatar}
+                                      alt={speaker.name}
+                                      class="w-12 h-12 rounded-full object-cover"
+                                      loading="lazy"
+                                    />
+                                    <div>
+                                      <p class="text-gray-900 dark:text-white">{speaker.name}</p>
+                                      <p class="text-sm text-gray-500 dark:text-gray-400">{speaker.role}</p>
+                                    </div>
+                                  </div>
+                                ) : (
+                                  <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700"></div>
+                                    <div>
+                                      <p class="text-gray-900 dark:text-white">Unknown Speaker</p>
+                                      <p class="text-sm text-gray-500 dark:text-gray-400">Speaker not found</p>
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          )}
+                        </article>
+                      ))}
+                    </div>
+
+                    {/* Right column - second half of events */}
+                    <div class="space-y-4">
+                      {track.events.slice(Math.ceil(track.events.length / 2)).map(event => (
+                        <article class="p-4 space-y-3 bg-white rounded-md border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                          <div class="flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400">
+                            <Icon name="tabler:clock" class="w-4 h-4" />
+                            <span>{event.time}</span>
+                          </div>
+
+                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                            {event.title}
+                          </h3>
+
+                          {/* Event Description */}
+                          {event.description && (
+                            <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                              {event.description}
+                            </p>
+                          )}
+
+                          {/* Speakers Section */}
+                          {event.speakers?.length > 0 && (
+                            <div class="space-y-4 mt-3">
+                              {event.speakers.map(speakerId => {
+                                const speaker = getSpeaker(speakerId);
+                                return speaker ? (
+                                  <div class="flex items-center gap-3">
+                                    <img
+                                      src={speaker.avatar}
+                                      alt={speaker.name}
+                                      class="w-12 h-12 rounded-full object-cover"
+                                      loading="lazy"
+                                    />
+                                    <div>
+                                      <p class="text-gray-900 dark:text-white">{speaker.name}</p>
+                                      <p class="text-sm text-gray-500 dark:text-gray-400">{speaker.role}</p>
+                                    </div>
+                                  </div>
+                                ) : (
+                                  <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700"></div>
+                                    <div>
+                                      <p class="text-gray-900 dark:text-white">Unknown Speaker</p>
+                                      <p class="text-sm text-gray-500 dark:text-gray-400">Speaker not found</p>
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          )}
+                        </article>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}

@@ -58,9 +58,9 @@
             },
             {
               "time": "15:40 - 16:20",
-              "title": "Automated Proof Generation for Rust Code via Self-Evolution",
+              "title": "miniCPM",
               "description": "",
-              "speakers": ["tianyu-chen"]
+              "speakers": ["chao-jia"]
             },
             {
               "time": "16:20 - 17:00",
@@ -328,9 +328,9 @@
           "events": [
             {
               "time": "9:30  - 10:00",
-              "title": "Qwen",
+              "title": "Keynote",
               "description": "",
-              "speakers": ["baosong-yang"]
+              "speakers": ["tbd"]
             },
             {
               "time": "10:10 - 10:40",
@@ -340,9 +340,9 @@
             },
             {
               "time": "10:40 - 11:20",
-              "title": "miniCPM",
+              "title": "Qwen",
               "description": "",
-              "speakers": ["chao-jia"]
+              "speakers": ["baosong-yang"]
             },
             {
               "time": "11:20 - 12:00",
