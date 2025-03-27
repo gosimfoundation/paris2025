@@ -26,7 +26,7 @@ import Container from '~/components/widgets/Container.astro';
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedSpeakers = await getCollection('speaker', ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
+  return !data.draft && data.name !== "TBD" && data.publishDate < new Date();
 });
 
 // function getPrettyTrackName(track) {
