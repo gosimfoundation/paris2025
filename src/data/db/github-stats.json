@@ -701,67 +701,7 @@
         }
       ]
     },
-    {
-      "name": "tidb",
-      "full_name": "pingcap/tidb",
-      "url": "https://github.com/pingcap/tidb",
-      "description": "TiDB - the open-source, cloud-native, distributed SQL database designed for modern applications.",
-      "stars": 38.1,
-      "age_months": 114.3,
-      "forks": 5902,
-      "language": "Go",
-      "created_at": "2015-09-06T04:01:52Z",
-      "updated_at": "2025-03-15T02:10:54Z",
-      "license": "Apache License 2.0",
-      "topics": [
-        "cloud-native",
-        "database",
-        "distributed-database",
-        "distributed-transactions",
-        "go",
-        "hacktoberfest",
-        "htap",
-        "mysql",
-        "mysql-compatibility",
-        "scale",
-        "serverless",
-        "sql",
-        "tidb"
-      ],
-      "logo_url": "https://avatars.githubusercontent.com/u/11855343?s=200&v=4",
-      "top_contributors": [
-        {
-          "username": "hawkingrei",
-          "contributions": 1230,
-          "profile_url": "https://github.com/hawkingrei",
-          "avatar_url": "https://avatars.githubusercontent.com/u/3427324?v=4"
-        },
-        {
-          "username": "tiancaiamao",
-          "contributions": 1187,
-          "profile_url": "https://github.com/tiancaiamao",
-          "avatar_url": "https://avatars.githubusercontent.com/u/1420062?v=4"
-        },
-        {
-          "username": "coocood",
-          "contributions": 1080,
-          "profile_url": "https://github.com/coocood",
-          "avatar_url": "https://avatars.githubusercontent.com/u/891222?v=4"
-        },
-        {
-          "username": "zimulala",
-          "contributions": 964,
-          "profile_url": "https://github.com/zimulala",
-          "avatar_url": "https://avatars.githubusercontent.com/u/4242506?v=4"
-        },
-        {
-          "username": "qw4990",
-          "contributions": 848,
-          "profile_url": "https://github.com/qw4990",
-          "avatar_url": "https://avatars.githubusercontent.com/u/7499936?v=4"
-        }
-      ]
-    },
+
     {
       "name": "ragflow",
       "full_name": "infiniflow/ragflow",
@@ -1100,53 +1040,165 @@
       ]
     },
     {
-      "name": "Cosmos-Tokenizer",
-      "full_name": "NVIDIA/Cosmos-Tokenizer",
-      "url": "https://github.com/NVIDIA/Cosmos-Tokenizer",
-      "description": "Cosmos Tokenizer suite enables 2048x compression of images/videos through continuous/discrete encoding, achieving 12x faster processing than SOTA methods while maintaining quality, serving as core infrastructure for Physical AI systems.",
-      "stars": 1.6,
-      "age_months": 4.4,
-      "forks": 73,
-      "language": "Jupyter Notebook",
-      "created_at": "2024-10-30T20:48:53Z",
-      "updated_at": "2025-03-14T04:00:36Z",
-      "license": "Apache License 2.0",
+      "name": "jan",
+      "full_name": "menloresearch/jan",
+      "url": "https://github.com/menloresearch/jan",
+      "description": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer",
+      "stars": 28.2,
+      "age_months": 19.3,
+      "forks": 1658,
+      "language": "TypeScript",
+      "created_at": "2023-08-17T02:17:10Z",
+      "updated_at": "2025-03-27T00:00:44Z",
+      "license": "GNU Affero General Public License v3.0",
       "topics": [
-        "diffusion",
-        "tokenization",
-        "transformers"
+        "electron",
+        "gpt",
+        "llama2",
+        "llamacpp",
+        "localai",
+        "self-hosted"
       ],
-      "logo_url": "https://avatars.githubusercontent.com/u/1728152?s=48&v=4",
+      "logo_url": "https://avatars.githubusercontent.com/u/102363196?s=48&v=4",
       "top_contributors": [
         {
-          "username": "fitsumreda",
-          "contributions": 41,
-          "profile_url": "https://github.com/fitsumreda",
-          "avatar_url": "https://avatars.githubusercontent.com/u/15355345?v=4"
+          "username": "louis-menlo",
+          "contributions": 1003,
+          "profile_url": "https://github.com/louis-menlo",
+          "avatar_url": "https://avatars.githubusercontent.com/u/133622055?v=4"
         },
         {
-          "username": "Haoxiang-Wang",
-          "contributions": 4,
-          "profile_url": "https://github.com/Haoxiang-Wang",
-          "avatar_url": "https://avatars.githubusercontent.com/u/26175855?v=4"
+          "username": "urmauur",
+          "contributions": 639,
+          "profile_url": "https://github.com/urmauur",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10354610?v=4"
         },
         {
-          "username": "aicam",
-          "contributions": 3,
-          "profile_url": "https://github.com/aicam",
-          "avatar_url": "https://avatars.githubusercontent.com/u/5199863?v=4"
+          "username": "0xHieu01",
+          "contributions": 629,
+          "profile_url": "https://github.com/0xHieu01",
+          "avatar_url": "https://avatars.githubusercontent.com/u/150573299?v=4"
         },
         {
-          "username": "E-rmz",
-          "contributions": 1,
-          "profile_url": "https://github.com/E-rmz",
-          "avatar_url": "https://avatars.githubusercontent.com/u/69146831?v=4"
+          "username": "jan-service-account",
+          "contributions": 311,
+          "profile_url": "https://github.com/jan-service-account",
+          "avatar_url": "https://avatars.githubusercontent.com/u/136811300?v=4"
         },
         {
-          "username": "ethanhe42",
-          "contributions": 1,
-          "profile_url": "https://github.com/ethanhe42",
-          "avatar_url": "https://avatars.githubusercontent.com/u/10027339?v=4"
+          "username": "hiento09",
+          "contributions": 245,
+          "profile_url": "https://github.com/hiento09",
+          "avatar_url": "https://avatars.githubusercontent.com/u/136591877?v=4"
+        }
+      ]
+    },
+    {
+      "name": "oxen-release",
+      "full_name": "Oxen-AI/oxen-release",
+      "url": "https://github.com/Oxen-AI/oxen-release",
+      "description": "Lightning fast data version control system for structured and unstructured machine learning datasets. We aim to make versioning datasets as easy as versioning code.",
+      "stars": 0.9,
+      "age_months": 31.8,
+      "forks": 14,
+      "language": "Python",
+      "created_at": "2022-08-01T21:57:25Z",
+      "updated_at": "2025-03-26T21:57:26Z",
+      "license": "Apache License 2.0",
+      "topics": [
+        "artificial-intelligence",
+        "data-science",
+        "machine-learning",
+        "python",
+        "rust",
+        "version-control"
+      ],
+      "logo_url": "https://avatars.githubusercontent.com/u/104101299?s=48&v=4",
+      "top_contributors": [
+        {
+          "username": "gschoeni",
+          "contributions": 448,
+          "profile_url": "https://github.com/gschoeni",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1326790?v=4"
+        },
+        {
+          "username": "jcelliott",
+          "contributions": 32,
+          "profile_url": "https://github.com/jcelliott",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1724070?v=4"
+        },
+        {
+          "username": "benartuso",
+          "contributions": 26,
+          "profile_url": "https://github.com/benartuso",
+          "avatar_url": "https://avatars.githubusercontent.com/u/49073323?v=4"
+        },
+        {
+          "username": "EloyMartinez",
+          "contributions": 22,
+          "profile_url": "https://github.com/EloyMartinez",
+          "avatar_url": "https://avatars.githubusercontent.com/u/47719973?v=4"
+        },
+        {
+          "username": "Eric-Laurence",
+          "contributions": 5,
+          "profile_url": "https://github.com/Eric-Laurence",
+          "avatar_url": "https://avatars.githubusercontent.com/u/41548260?v=4"
+        }
+      ]
+    },
+    {
+      "name": "rerun",
+      "full_name": "rerun-io/rerun",
+      "url": "https://github.com/rerun-io/rerun",
+      "description": "Visualize streams of multimodal data. Free, fast, easy to use, and simple to integrate. Built in Rust.",
+      "stars": 8.0,
+      "age_months": 35.6,
+      "forks": 426,
+      "language": "Rust",
+      "created_at": "2022-04-08T07:30:05Z",
+      "updated_at": "2025-03-27T00:04:27Z",
+      "license": "Apache License 2.0",
+      "topics": [
+        "computer-vision",
+        "cpp",
+        "multimodal",
+        "python",
+        "robotics",
+        "rust",
+        "visualization"
+      ],
+      "logo_url": "https://avatars.githubusercontent.com/u/99407368?s=48&v=4",
+      "top_contributors": [
+        {
+          "username": "emilk",
+          "contributions": 1584,
+          "profile_url": "https://github.com/emilk",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1148717?v=4"
+        },
+        {
+          "username": "Wumpf",
+          "contributions": 1118,
+          "profile_url": "https://github.com/Wumpf",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1220815?v=4"
+        },
+        {
+          "username": "teh-cmc",
+          "contributions": 894,
+          "profile_url": "https://github.com/teh-cmc",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2910679?v=4"
+        },
+        {
+          "username": "jleibs",
+          "contributions": 676,
+          "profile_url": "https://github.com/jleibs",
+          "avatar_url": "https://avatars.githubusercontent.com/u/3312232?v=4"
+        },
+        {
+          "username": "abey79",
+          "contributions": 500,
+          "profile_url": "https://github.com/abey79",
+          "avatar_url": "https://avatars.githubusercontent.com/u/49431240?v=4"
         }
       ]
     }
