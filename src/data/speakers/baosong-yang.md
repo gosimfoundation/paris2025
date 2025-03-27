@@ -6,7 +6,7 @@ avatar: {
   src: "/images/speakers/generic-profile.png",
   alt: "Baosong Yang"
 }
-topic: Qwen"
+topic: "Qwen"
 org: "Alibaba Tongyi Lab"
 track: "ai-model"
 publishDate: "2025-03-26 00:00"

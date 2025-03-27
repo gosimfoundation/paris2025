@@ -1,12 +1,6 @@
 {
   "speakers": [
     {
-      "id": "tbd",
-      "name": "TBD",
-      "role": "",
-      "avatar": "/images/speakers/generic-profile.png"
-    },
-    {
       "id": "ville-kuosmanen",
       "name": "Ville Kuosmanen",
       "role": "Founder at Voyage Robotics",
@@ -214,7 +208,7 @@
       "id": "tbd",
       "name": "TBD",
       "role": "",
-      "avatar": "/images/speakers/generic-profile.jpg"
+      "avatar": "/images/speakers/generic-profile.png"
     },
     {
       "id": "shanghang-zhang",

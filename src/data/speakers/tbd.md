@@ -3,7 +3,7 @@ draft: false
 name: "TBD"
 title: ""
 avatar: {
-  src: "/images/speakers/generic-profile.jpg",
+  src: "/images/speakers/generic-profile.png",
   alt: "TBD"
 }
 topic: "TBD"
