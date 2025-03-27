@@ -8,6 +8,6 @@ avatar: {
 }
 topic: ""
 org: "Zhipu"
-track: "ai-models"
+track: "ai-model"
 publishDate: "2025-03-14 14:43"
 ---

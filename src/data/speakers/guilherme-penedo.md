@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 name: "Guilherme Penedo"
 title: "ML Research Engineer at Hugging Face"
 avatar: {
@@ -8,6 +8,6 @@ avatar: {
 }
 topic: "Open-R1: A fully open reproduction of DeepSeek-R1"
 org: "Hugging Face"
-track: "ai-models"
+track: "ai-model"
 publishDate: "2025-03-14 16:49"
 ---

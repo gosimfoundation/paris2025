@@ -8,6 +8,6 @@ avatar: {
 }
 topic: "OpenSeek: Collaborative Innovation for Next-Gen Models"
 org: "BAAI"
-track: "ai-models"
+track: "ai-model"
 publishDate: "2025-03-14 14:43"
 ---

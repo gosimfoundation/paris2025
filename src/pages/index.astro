@@ -29,6 +29,18 @@ const publishedSpeakers = await getCollection('speaker', ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
 
+// function getPrettyTrackName(track) {
+//   const trackMap = {
+//     'ai-infra': 'AI Infrastructure',
+//     'ai-apps': 'AI Applications',
+//     'ai-model': 'AI Models',
+//     'embodied-ai': 'Embodied AI',
+//     pytorch: 'PyTorch AI Day',
+//   };
+
+//   return trackMap[track] || track; // Return the mapped name or the original if no mapping exists
+// }
+
 const metadata = {
   title: 'GOSIM AI Paris 2025',
   description:
@@ -192,12 +204,6 @@ const metadata = {
           'Propelling Open-Source Robotics Forward: Innovating community-driven robot design, expanding openly available datasets, developing advanced visual language models, and shaping policy frameworks that define the future of autonomous systems.',
         icon: 'tabler:robot-face',
       },
-      /*       {
-        title: 'AI for Science',
-        description:
-          'Pushing the Frontiers of Scientific Discovery with AI: Empowering breakthroughs in mathematics, material design, drug discovery, astrophysics, and computer systems through open-source AI research.',
-        icon: 'streamline:ai-science-spark',
-      }, */
       {
         title: 'PyTorch AI Paris Day',
         description:
@@ -210,7 +216,6 @@ const metadata = {
       <div class="absolute inset-0 bg-purple-100 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
-
 
   <Container id="speakers">
     <div id="speakers" class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
@@ -235,12 +240,20 @@ const metadata = {
         }
       }
     </style>
-    <div class="grid md:grid-cols-4 gap-10 mx-auto max-w-4xl mt-12">
+    <div class="grid md:grid-cols-4 gap-10 mx-auto max-w-4xl my-12">
       {
         publishedSpeakers.map((speakerEntry) => (
           <div class="group relative">
-            <div class="w-full aspect-square rounded-lg overflow-hidden transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
-              <div class="w-full h-full object-cover object-center rounded-lg">
+            <div class="w-full aspect-square rounded-b-lg overflow-hidden transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
+            {/* {speakerEntry.data.track && (
+              <div class="w-full bg-indigo-600/80 text-white text-xs py-1 px-2 text-center rounded-t-lg mt-0">
+                {Array.isArray(speakerEntry.data.track)
+                  ? speakerEntry.data.track.map((t) => getPrettyTrackName(t)).join(' • ')
+                  : getPrettyTrackName(speakerEntry.data.track)}
+              </div>
+            )} */}
+
+              <div class="w-full h-full object-cover object-center rounded-b-lg">
                 <Picture
                   src={speakerEntry.data.avatar.src}
                   alt={speakerEntry.data.avatar.alt}
@@ -275,7 +288,7 @@ const metadata = {
     </div>
   </Container>
 
-    <Content
+  <Content
     id="spotlight"
     title="GOSIM AI Spotlight"
     tagline="Join the Developers of Tomorrow"

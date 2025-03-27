@@ -4,7 +4,7 @@ name: "Sebastien Crozet"
 title: "Co-founder and CTO
 Foresight Mining Software Corporation"
 avatar: {
-    src: "/images/speakers/sebastien-crozet.png",
+    src: "/images/speakers/sebastien-crozet.jpeg",
     alt: "Sebastien Crozet"
 }
 topic: "WGMath"

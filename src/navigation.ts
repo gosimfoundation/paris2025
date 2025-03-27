@@ -10,7 +10,7 @@ export const headerData = {
       links: [
         {
           text: 'Tracks',
-          href: "#tracks",
+          href: "/#tracks",
         },
         {
           text: 'Venue - Station F',
@@ -20,7 +20,11 @@ export const headerData = {
     },
     {
       text: 'Speakers',
-      href: "#speakers",
+      href: "/#speakers",
+    },
+    {
+      text: 'Schedules',
+      href: "/schedules",
     },
     {
       text: 'Co-Located Events',
@@ -44,7 +48,7 @@ export const headerData = {
       links: [
         {
           text: 'Why Attend',
-          href: '#why-attend',
+          href: '/#why-attend',
         },
         {
           text: 'Be a Volunteer',

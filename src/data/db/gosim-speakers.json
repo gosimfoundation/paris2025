@@ -1,6 +1,12 @@
 {
   "speakers": [
     {
+      "id": "tbd",
+      "name": "TBD",
+      "role": "",
+      "avatar": "/images/speakers/generic-profile.png"
+    },
+    {
       "id": "ville-kuosmanen",
       "name": "Ville Kuosmanen",
       "role": "Founder at Voyage Robotics",
@@ -45,7 +51,7 @@
     {
       "id": "xinrui-liu",
       "name": "Xinrui Liu",
-      "role": "VP of Dify",
+      "role": "Developer Ecosystem Director at LangGenius",
       "avatar": "/images/speakers/xinrui-liu.jpg"
     },
     {
@@ -73,6 +79,12 @@
       "avatar": "/images/speakers/ruixue-ding.jpg"
     },
     {
+      "id": "siao-liu",
+      "name": "Siao Liu",
+      "role": "Researcher at BAAI",
+      "avatar": "/images/speakers/siao-liu.jpg"
+    },
+    {
       "id": "tianyu-chen",
       "name": "Tianyu Chen",
       "role": "Ph.D Candidate at Peking University",
@@ -82,13 +94,31 @@
       "id": "sebastien-crozet",
       "name": "Sebastien Crozet",
       "role": "Co-founder and CTO Foresight Mining Software Corporation",
-      "avatar": "/images/speakers/sebastien-crozet.png"
+      "avatar": "/images/speakers/sebastien-crozet.jpeg"
+    },
+    {
+      "id": "baosong-yang",
+      "name": "Baosong Yang",
+      "role": "Research Engineer at Zhipu.AI",
+      "avatar": "/images/speakers/generic-profile.png"
+    },
+    {
+      "id": "ke-bao",
+      "name": "Ke Bao",
+      "role": "Member of LMSYS Org",
+      "avatar": "/images/speakers/ke-bao.jpeg"
     },
     {
       "id": "yingfeng-zhang",
       "name": "Yingfeng Zhang",
       "role": "Co-Founder of InfiniFlow",
       "avatar": "/images/speakers/yingfeng-zhang.png"
+    },
+    {
+      "id": "alexy-khrabrov",
+      "name": "Alexy Khrabrov",
+      "role": "AI Community Architect at Neo4j",
+      "avatar": "/images/speakers/alexy-khrabrov.jpg"
     },
     {
       "id": "zhipeng-huang",
@@ -107,6 +137,12 @@
       "name": "Matt White",
       "role": "GM of AI of Linux Foundation",
       "avatar": "/images/speakers/matt-white.png"
+    },
+    {
+      "id": "huy-hoang-ha",
+      "name": "Huy Hoang Ha",
+      "role": "LLM Researcher at Menlo Research",
+      "avatar": "/images/speakers/huy-hoang-ha.jpg"
     },
     {
       "id": "jinwei-gu",
@@ -133,6 +169,18 @@
       "avatar": "/images/speakers/yanzhi-wang.png"
     },
     {
+      "id": "yongbin-li",
+      "name": "Yongbin Li",
+      "role": "",
+      "avatar": "/images/speakers/generic-profile.png"
+    },
+    {
+      "id": "cheng-chi",
+      "name": "Cheng Chi",
+      "role": "Researcher at BAAI",
+      "avatar": "/images/speakers/cheng-chi.jpeg"
+    },
+    {
       "id": "cailean-osborne-phd",
       "name": "Cailean Osborne, PhD",
       "role": "Senior Researcher at Linux Foundation",
@@ -145,22 +193,28 @@
       "avatar": "/images/speakers/min-zhang.png"
     },
     {
+      "id": "diego-rojas",
+      "name": "Diego Rojas",
+      "role": "Research Engineer at Zhipu.AI",
+      "avatar": "/images/speakers/diego-rojas.jpeg"
+    },
+    {
       "id": "guillaume-blaquiere",
       "name": "Guillaume Blaquiere",
       "role": "Group Data Architect Carrefour",
       "avatar": "/images/speakers/guillaume-blaquiere.png"
     },
     {
-      "id": "han-xiao",
-      "name": "Han Xiao",
-      "role": "Founder & CEO of JinA AI",
-      "avatar": "/images/speakers/han-xiao.png"
-    },
-    {
       "id": "philipp-oppermann",
       "name": "Philipp Oppermann",
       "role": "Dora Project Lead at DORA+Zenoh",
       "avatar": "/images/speakers/philipp-oppermann.jpeg"
+    },
+    {
+      "id": "tbd",
+      "name": "TBD",
+      "role": "",
+      "avatar": "/images/speakers/generic-profile.jpg"
     },
     {
       "id": "shanghang-zhang",
@@ -187,6 +241,12 @@
       "avatar": "/images/speakers/generic-profile.png"
     },
     {
+      "id": "yaowei-zheng",
+      "name": "Yaowei Zheng",
+      "role": "Ph.D. Student at Beihang University",
+      "avatar": "/images/speakers/yaowei-zheng.jpeg"
+    },
+    {
       "id": "guang-liu",
       "name": "Guang Liu",
       "role": "Head of OpenSeek",
@@ -205,10 +265,22 @@
       "avatar": "/images/speakers/guilherme-penedo.jpg"
     },
     {
+      "id": "xiyuan-wang",
+      "name": "Xiyuan Wang",
+      "role": "Senior Software Engineer at Huawei",
+      "avatar": "/images/speakers/xiyuan-wang.jpeg"
+    },
+    {
       "id": "sirui-hong",
       "name": "Sirui Hong",
       "role": "Co-Founder of OpenManus",
       "avatar": "/images/speakers/sirui-hong.jpg"
+    },
+    {
+      "id": "xin-dong",
+      "name": "Xin Dong",
+      "role": "Technical Expert in the Programming Language Lab of Huawei",
+      "avatar": "/images/speakers/xin-dong.jpg"
     },
     {
       "id": "michael-yuan",
@@ -217,22 +289,28 @@
       "avatar": "/images/speakers/michael-yuan.png"
     },
     {
+      "id": "elie-bakouch",
+      "name": "Elie Bakouch",
+      "role": "Research Engineer at Hugging Face",
+      "avatar": "/images/speakers/elie-bakouch.jpeg"
+    },
+    {
       "id": "yonghua-lin",
       "name": "Yonghua Lin",
       "role": "VP of BAAI",
       "avatar": "/images/speakers/yonghua-lin.png"
     },
     {
+      "id": "han-xiao",
+      "name": "Han Xiao",
+      "role": "Founder & CEO of JinA AI",
+      "avatar": "/images/speakers/han-xiao.png"
+    },
+    {
       "id": "jason-li",
       "name": "Jason Li",
       "role": "Senior VP at CSDN",
       "avatar": "/images/speakers/jason-li.png"
-    },
-    {
-      "id": "yaowei-zheng",
-      "name": "Yaowei Zheng",
-      "role": "Ph.D. Student at Beihang University",
-      "avatar": "/images/speakers/yaowei-zheng.jpeg"
     }
   ]
 }

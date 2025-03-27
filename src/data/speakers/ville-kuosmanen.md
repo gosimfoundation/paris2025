@@ -1,7 +1,7 @@
 ---
-draft: true
+draft: false
 name: "Ville Kuosmanen"
-title: "Founde at Voyage Robotics"
+title: "Founder at Voyage Robotics"
 avatar: {
     src: "/images/speakers/ville-kuosmanen.jpg",
     alt: "Ville Kuosmanen"
