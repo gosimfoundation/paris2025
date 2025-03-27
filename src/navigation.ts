@@ -54,6 +54,10 @@ export const headerData = {
           text: 'Be a Volunteer',
           href: 'https://docs.google.com/forms/d/e/1FAIpQLSc62kJczw7lr-l0JAAbkabeIrrPPAD7OWyzwDopTD0L4HC6EQ/viewform',
         },
+        {
+          text: 'Volunteers List',
+          href: '/volunteers',
+        },
       ],
     },
   ],
