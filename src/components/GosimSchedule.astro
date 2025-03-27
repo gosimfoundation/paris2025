@@ -1,7 +1,6 @@
 ---
 //import EventSchedule from '~/components/widgets/EventSchedule.astro';
 import EventScheduleTabs from '~/components/widgets/EventScheduleTabs.astro';
-import Container from '~/components/widgets/Container.astro';
 //import scheduleData from '~/data/db/gosim-schedule.json';
 import scheduleTabsData from '~/data/db/gosim-schedule.json';
 
@@ -11,13 +10,5 @@ const schedule = scheduleTabsData.days;
 
 <!-- <EventSchedule schedule={schedule} />
  -->
-<Container>
-  <div class="mt-24">
-    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center">
-      <span class="text-indigo-600">Full Conference Schedule</span>
-    </h2>
-    <p class="text-lg mt-4 text-slate-600 text-center">Organized with precision and care</p>
-  </div>
-</Container>
 
 <EventScheduleTabs days={schedule} />

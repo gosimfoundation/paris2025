@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Baosong Yang"
-title: "Research Engineer at Zhipu.AI"
+title: "Research Engineer at Alibaba Tongyi Lab"
 avatar: {
   src: "/images/speakers/generic-profile.png",
   alt: "Baosong Yang"

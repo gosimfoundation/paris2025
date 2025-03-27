@@ -4,6 +4,7 @@ import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
+import Container from '~/components/widgets/Container.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import GosimSchedule from '~/components/GosimSchedule.astro';
 
@@ -13,6 +14,16 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <Container>
+    <div class="mt-24">
+      <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center">
+        <span class="text-indigo-600">Full Conference Schedule</span>
+      </h2>
+      <p class="text-lg mt-4 text-slate-600 text-center">Organized with precision and care</p>
+    </div>
+   </Container
+  >
+
   <!-- Hero Widget ******************* -->
 
   <!-- <Hero
