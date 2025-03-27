@@ -175,60 +175,64 @@ const getSpeaker = (id) => speakersData.speakers.find(s => s.id === id);
   </div>
 
   <script is:inline>
-    // Wait for document to be fully loaded
-    document.addEventListener('DOMContentLoaded', () => {
-      // Set up tab navigation for tracks only
-      const setupTrackTabs = () => {
-        // Track tab navigation
-        const selectTrackTab = (selectedTab) => {
-          const trackId = selectedTab.dataset.trackId;
-          const dayId = selectedTab.dataset.dayId;
-          const combinedId = `${dayId}-${trackId}`;
+    // Function to set up tab navigation
+    function setupTrackTabs() {
+      // Track tab navigation
+      const selectTrackTab = (selectedTab) => {
+        const trackId = selectedTab.dataset.trackId;
+        const dayId = selectedTab.dataset.dayId;
+        const combinedId = `${dayId}-${trackId}`;
 
-          // Get all track tabs within the same day
-          const dayTrackTabs = document.querySelectorAll(`[role="tab"][data-day-id="${dayId}"]`);
+        // Get all track tabs within the same day
+        const dayTrackTabs = document.querySelectorAll(`[role="tab"][data-day-id="${dayId}"]`);
 
-          // Update track tabs within this day
-          dayTrackTabs.forEach(tab => {
-            tab.classList.remove('bg-indigo-600', 'text-white');
-            tab.classList.add('text-gray-600', 'bg-gray-200', 'dark:text-gray-300', 'dark:bg-gray-700', 'hover:bg-gray-300', 'dark:hover:bg-gray-600');
-            tab.setAttribute('aria-selected', 'false');
-          });
-
-          // Style selected track tab
-          selectedTab.classList.add('bg-indigo-600', 'text-white');
-          selectedTab.classList.remove('text-gray-600', 'bg-gray-200', 'hover:bg-gray-300', 'dark:text-gray-300', 'dark:bg-gray-700', 'dark:hover:bg-gray-600');
-          selectedTab.setAttribute('aria-selected', 'true');
-
-          // Get all track panels for this day
-          const trackPanels = document.querySelectorAll(`[role="tabpanel"][data-track-panel-id^="${dayId}-"]`);
-
-          // Hide all track panels
-          trackPanels.forEach(panel => panel.classList.add('hidden'));
-
-          // Show selected track panel
-          const selectedTrackPanel = document.querySelector(`[data-track-panel-id="${combinedId}"]`);
-          if (selectedTrackPanel) {
-            selectedTrackPanel.classList.remove('hidden');
-          }
-        };
-
-        // Add event listeners to all track tabs
-        document.querySelectorAll('[role="tab"][data-track-id]').forEach(tab => {
-          tab.addEventListener('click', () => selectTrackTab(tab));
+        // Update track tabs within this day
+        dayTrackTabs.forEach(tab => {
+          tab.classList.remove('bg-indigo-600', 'text-white');
+          tab.classList.add('text-gray-600', 'bg-gray-200', 'dark:text-gray-300', 'dark:bg-gray-700', 'hover:bg-gray-300', 'dark:hover:bg-gray-600');
+          tab.setAttribute('aria-selected', 'false');
         });
 
-        // Initialize all first track tabs for each day
-        document.querySelectorAll('[role="tablist"][aria-label="Tracks"]').forEach(trackList => {
-          const firstTrackTab = trackList.querySelector('[role="tab"]');
-          if (firstTrackTab) {
-            selectTrackTab(firstTrackTab);
-          }
-        });
+        // Style selected track tab
+        selectedTab.classList.add('bg-indigo-600', 'text-white');
+        selectedTab.classList.remove('text-gray-600', 'bg-gray-200', 'hover:bg-gray-300', 'dark:text-gray-300', 'dark:bg-gray-700', 'dark:hover:bg-gray-600');
+        selectedTab.setAttribute('aria-selected', 'true');
+
+        // Get all track panels for this day
+        const trackPanels = document.querySelectorAll(`[role="tabpanel"][data-track-panel-id^="${dayId}-"]`);
+
+        // Hide all track panels
+        trackPanels.forEach(panel => panel.classList.add('hidden'));
+
+        // Show selected track panel
+        const selectedTrackPanel = document.querySelector(`[data-track-panel-id="${combinedId}"]`);
+        if (selectedTrackPanel) {
+          selectedTrackPanel.classList.remove('hidden');
+        }
       };
 
-      // Initialize the track tabs
-      setupTrackTabs();
-    });
+      // Add event listeners to all track tabs
+      document.querySelectorAll('[role="tab"][data-track-id]').forEach(tab => {
+        tab.addEventListener('click', () => selectTrackTab(tab));
+      });
+
+      // Initialize all first track tabs for each day
+      document.querySelectorAll('[role="tablist"][aria-label="Tracks"]').forEach(trackList => {
+        const firstTrackTab = trackList.querySelector('[role="tab"]');
+        if (firstTrackTab) {
+          selectTrackTab(firstTrackTab);
+        }
+      });
+    }
+
+    // Run setup immediately
+    setupTrackTabs();
+
+    // Also run when DOM is fully loaded (for initial page load)
+    document.addEventListener('DOMContentLoaded', setupTrackTabs);
+
+    // For SPA-like navigation in Astro/View transitions
+    document.addEventListener('astro:page-load', setupTrackTabs);
+    document.addEventListener('astro:after-swap', setupTrackTabs);
   </script>
 </section>
