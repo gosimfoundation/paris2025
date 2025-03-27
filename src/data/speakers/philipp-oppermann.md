@@ -3,7 +3,7 @@ draft: false
 name: "Philipp Oppermann"
 title: "Dora Project Lead"
 avatar: {
-    src: "/images/speakers/philipp-oppermann.png",
+    src: "/images/speakers/philipp-oppermann.jpeg",
     alt: "Philipp Oppermann"
 }
 topic: ""

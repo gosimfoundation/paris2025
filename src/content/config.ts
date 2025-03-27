@@ -77,6 +77,7 @@ const speakerCollection = defineCollection({
       alt: z.string(),
     }),
     topic: z.string(),
+    track: z.string(),
     publishDate: z.string().transform(str => new Date(str)),
   }),
 });

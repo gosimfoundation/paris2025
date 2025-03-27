@@ -1,10 +1,10 @@
 ---
 draft: true
-name: "Ding Ruixue"
-title: "Algorithm Expert"
+name: "Ruixue Ding"
+title: "Algorithm Expert at Alibaba Tongyi Lab"
 avatar: {
-    src: "/images/speakers/ding-ruixue.png",
-    alt: "Ding Ruixue"
+    src: "/images/speakers/ruixue-ding.jpg",
+    alt: "Ruixue Ding"
 }
 topic: "ViDoRAG: Advancing Visual Document Retrieval-Augmented Generation"
 org: "Alibaba Tongyi Lab"

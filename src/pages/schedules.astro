@@ -1,37 +1,43 @@
 ---
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import Content from '~/components/widgets/Content.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
+import HeroSmall from '~/components/widgets/HeroSmall.astro';
+// import Container from '~/components/widgets/Container.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import GosimSchedule from '~/components/GosimSchedule.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'GOSIM AI Paris Schedule',
 };
 ---
 
 <Layout metadata={metadata}>
+  <!-- <Container>
+    <div class="mt-24">
+      <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center">
+        <span class="text-indigo-600">Full Conference Schedule</span>
+      </h2>
+      <p class="text-lg mt-4 text-slate-600 text-center">Organized with precision and care</p>
+    </div>
+   </Container> -->
+
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    tagline="Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
+  <HeroSmall
+    tagline=""
+    title="Full Conference Schedule"
+    subtitle=""
     bg={`
-      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('src/assets/images/hero-bk06.png');">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero-bk07.png');">
       </div>
     `}
   />
 
-      <!-- Schedule Widget *********** -->
-    
+  <!-- Schedule Widget *********** -->
 
+  <GosimSchedule />
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Explore our diverse templates"
     subtitle="Discover our selection below to streamline and elevate your projects."
     columns={3}
@@ -89,11 +95,11 @@ const metadata = {
         icon: 'tabler:tie',
       },
     ]}
-  />
+  /> -->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     items={[
       {
@@ -130,11 +136,11 @@ const metadata = {
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
     </Fragment>
   </Content>
-
+ -->
 
   <!-- Testimonials Widget *********** -->
 
-  <Testimonials
+  <!-- <Testimonials
     title="Words from real customers"
     testimonials={[
       {
@@ -171,9 +177,10 @@ const metadata = {
       href: 'https://github.com/onwidget/astrowind',
       icon: 'tabler:chevron-right',
     }}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
-
-
+  <div class="flex justify-center text-sm my-5">
+    <p><i>Schedules are subject to change.</i></p>
+  </div>
 </Layout>

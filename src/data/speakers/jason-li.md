@@ -8,6 +8,6 @@ avatar: {
 }
 topic: "Decoding DeepSeek"
 org: "CSDN"
-track: "ai-models"
+track: "ai-model"
 publishDate: "2025-03-14 14:43"
 ---

@@ -8,6 +8,6 @@ avatar: {
 }
 topic: "Linear Next: The evolution of LLM Architecture"
 org: "MiniMax"
-track: "ai-models"
+track: "ai-model"
 publishDate: "2025-03-14 14:43"
 ---

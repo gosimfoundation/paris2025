@@ -9,12 +9,8 @@ export const headerData = {
       text: 'Homes',
       links: [
         {
-          text: 'Speakers',
-          href: "#speakers",
-        },
-        {
           text: 'Tracks',
-          href: "#tracks",
+          href: "/#tracks",
         },
         {
           text: 'Venue - Station F',
@@ -23,15 +19,27 @@ export const headerData = {
       ],
     },
     {
+      text: 'Speakers',
+      href: "/#speakers",
+    },
+    {
+      text: 'Schedules',
+      href: "/schedules",
+    },
+    {
       text: 'Co-Located Events',
       links: [
         {
-          text: 'GOSIM AI Spotlight',
-          href: 'https://spotlight.gosim.org/ai2025',
+          text: 'PyTorch AI Paris Day',
+          href: '/',
         },
         {
           text: 'Open-Source AI Strategy Forum',
           href: '/os-ai-strategy-forum',
+        },
+        {
+          text: 'GOSIM AI Spotlight',
+          href: 'https://spotlight.gosim.org/ai2025',
         },
       ],
     },
@@ -40,7 +48,7 @@ export const headerData = {
       links: [
         {
           text: 'Why Attend',
-          href: '#why-attend',
+          href: '/#why-attend',
         },
         {
           text: 'Be a Volunteer',
@@ -49,7 +57,7 @@ export const headerData = {
       ],
     },
   ],
-  actions: [{ text: 'Registration', href: 'https://gosimaiparis.eventbrite.com/', target: '_blank' }],
+  actions: [{ text: 'Early Bird Tickets', href: 'https://gosimaiparis.eventbrite.com/', target: '_blank' }],
 };
 
 export const footerData = {

@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 name: "Min Zhang"
 title: "EU Director of Unitree Robotics"
 avatar: {

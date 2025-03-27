@@ -3,7 +3,7 @@ draft: false
 name: "Fan Wang"
 title: "Researcher at the Embodied AI Center, AIRS"
 avatar: {
-    src: "/images/speakers/fan-wang.png",
+    src: "/images/speakers/fan-wang.jpg",
     alt: "Fan Wang"
 }
 topic: "Integrating Feedback and Learning in Closed Loop: Toward General-Purpose Embodied AI Systems"

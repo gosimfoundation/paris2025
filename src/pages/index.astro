@@ -22,16 +22,24 @@ import Highlight from '~/components/Highlight.astro';
 import { getCollection } from 'astro:content';
 import { Picture } from 'astro:assets';
 import Container from '~/components/widgets/Container.astro';
-import GosimSchedule from '~/components/GosimSchedule.astro';
 // import Sectionhead from '~/components/widgets/Sectionhead.astro';
-
-
-
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedSpeakers = await getCollection('speaker', ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
+  return !data.draft && data.name !== "TBD" && data.publishDate < new Date();
 });
+
+// function getPrettyTrackName(track) {
+//   const trackMap = {
+//     'ai-infra': 'AI Infrastructure',
+//     'ai-apps': 'AI Applications',
+//     'ai-model': 'AI Models',
+//     'embodied-ai': 'Embodied AI',
+//     pytorch: 'PyTorch AI Day',
+//   };
+
+//   return trackMap[track] || track; // Return the mapped name or the original if no mapping exists
+// }
 
 const metadata = {
   title: 'GOSIM AI Paris 2025',
@@ -97,13 +105,8 @@ const metadata = {
   <!-- GOSIM Widget ******************* -->
   <Gosim />
 
- <!--  
-  <ShadcnDemo />
- -->
-
- <!--  
-  <AnimataDemo />
- -->
+  <!-- <ShadcnDemo /> -->
+  <!-- <AnimataDemo /> -->
 
   <!-- Stats Widget ****************** -->
 
@@ -122,9 +125,8 @@ const metadata = {
 
   <Highlight />
 
-   <!-- <GosimSchedule /> -->
+  <!-- <GosimSchedule /> -->
 
-   
   <Features2
     id="why-attend"
     tagline="Why You Need to Attend"
@@ -202,14 +204,8 @@ const metadata = {
           'Propelling Open-Source Robotics Forward: Innovating community-driven robot design, expanding openly available datasets, developing advanced visual language models, and shaping policy frameworks that define the future of autonomous systems.',
         icon: 'tabler:robot-face',
       },
-/*       {
-        title: 'AI for Science',
-        description:
-          'Pushing the Frontiers of Scientific Discovery with AI: Empowering breakthroughs in mathematics, material design, drug discovery, astrophysics, and computer systems through open-source AI research.',
-        icon: 'streamline:ai-science-spark',
-      }, */
       {
-        title: 'PyTorch Day',
+        title: 'PyTorch AI Paris Day',
         description:
           'A dedicated space for AI practitioners, researchers, and engineers to explore the latest advancements in deep learning with PyTorch. From cutting-edge model development to scalable deployment, this track offers expert insights, hands-on sessions, and discussions shaping the future of AI with PyTorch.',
         icon: 'tabler:brand-python',
@@ -220,6 +216,77 @@ const metadata = {
       <div class="absolute inset-0 bg-purple-100 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
+
+  <Container id="speakers">
+    <div id="speakers" class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">Empowering the world with Open-Source.</h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        The GOSIM AI Paris 2025 speaker lineup is a diverse group of open-source leaders and developers who are
+        passionate about sharing their knowledge and expertise with the community. From foundational models to
+        cutting-edge research, our speakers will cover a wide range of topics to help you stay at the forefront of AI
+        innovation.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Here are some of the speakers that are planning to join us at the conference with more to be announced:
+      </p>
+    </div>
+    <style>
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <div class="grid md:grid-cols-4 gap-10 mx-auto max-w-4xl my-12">
+      {
+        publishedSpeakers.map((speakerEntry) => (
+          <div class="group relative">
+            <div class="w-full aspect-square rounded-b-lg overflow-hidden transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
+            {/* {speakerEntry.data.track && (
+              <div class="w-full bg-indigo-600/80 text-white text-xs py-1 px-2 text-center rounded-t-lg mt-0">
+                {Array.isArray(speakerEntry.data.track)
+                  ? speakerEntry.data.track.map((t) => getPrettyTrackName(t)).join(' • ')
+                  : getPrettyTrackName(speakerEntry.data.track)}
+              </div>
+            )} */}
+
+              <div class="w-full h-full object-cover object-center rounded-b-lg">
+                <Picture
+                  src={speakerEntry.data.avatar.src}
+                  alt={speakerEntry.data.avatar.alt}
+                  sizes="(max-width: 800px) 100vw, 400px"
+                  width={400}
+                  height={400}
+                  class="w-full h-full object-cover object-center rounded-lg"
+                />
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-b from-white/30 to-black/70 opacity-50 rounded-lg group-hover:from-black/50 group-hover:to-black/90 group-hover:opacity-70 transition-all duration-500" />
+            </div>
+
+            <div class="absolute inset-0 flex flex-col items-center p-4 text-center text-white transition-all duration-500 rounded-lg">
+              <h2 class="text-md translate-y-[-100%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 pt-2">
+                {speakerEntry.data.name}
+              </h2>
+              <div class="w-full mt-auto transition-all duration-300">
+                <h2 class="text-md group-hover:opacity-0 transition-opacity duration-300">{speakerEntry.data.name}</h2>
+                <h3 class="text-xs opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                  {speakerEntry.data.title}
+                </h3>
+              </div>
+              {speakerEntry.data.topic && (
+                <p class="text-xs font-light opacity-0 group-hover:opacity-100 absolute bottom-4 left-0 right-0 px-4 transition-opacity duration-300">
+                  {speakerEntry.data.topic}
+                </p>
+              )}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </Container>
 
   <Content
     id="spotlight"
@@ -261,69 +328,6 @@ const metadata = {
       <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero-bk07.png')"></div>
     </Fragment>
   </Content>
-
-  <Container id="speakers">
-    <div id="speakers" class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">Empowering the world with Open-Source.</h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-        The GOSIM AI Paris 2025 speaker lineup is a diverse group of open-source leaders and developers who are
-        passionate about sharing their knowledge and expertise with the community. From foundational models to
-        cutting-edge research, our speakers will cover a wide range of topics to help you stay at the forefront of AI
-        innovation.
-      </p>
-      <p class="text-lg leading-relaxed text-slate-500">
-        Here are some of the speakers that will be joining us at the conference with more to be announced:
-      </p>
-    </div>
-    <style>
-      @keyframes spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-    </style>
-    <div class="grid md:grid-cols-4 gap-10 mx-auto max-w-4xl mt-12">
-      {
-        publishedSpeakers.map((speakerEntry) => (
-          <div class="group relative">
-            <div class="w-full aspect-square rounded-lg overflow-hidden transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
-              <div class="w-full h-full object-cover object-center rounded-lg">
-                <Picture
-                  src={speakerEntry.data.avatar.src}
-                  alt={speakerEntry.data.avatar.alt}
-                  sizes="(max-width: 800px) 100vw, 400px"
-                  width={400}
-                  height={400}
-                  class="w-full h-full object-cover object-center rounded-lg"
-                />
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-b from-white/30 to-black/70 opacity-50 rounded-lg group-hover:from-black/50 group-hover:to-black/90 group-hover:opacity-70 transition-all duration-500" />
-            </div>
-
-            <div class="absolute inset-0 flex flex-col items-center p-4 text-center text-white transition-all duration-500 rounded-lg">
-              <h2 class="text-md translate-y-[-100%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 pt-2">
-                {speakerEntry.data.name}
-              </h2>
-              <div class="w-full mt-auto transition-all duration-300">
-                <h2 class="text-md group-hover:opacity-0 transition-opacity duration-300">{speakerEntry.data.name}</h2>
-                <h3 class="text-xs opacity-100 group-hover:opacity-0 transition-opacity duration-300">
-                  {speakerEntry.data.title}
-                </h3>
-              </div>
-              {speakerEntry.data.topic && (
-                <p class="text-xs font-light opacity-0 group-hover:opacity-100 absolute bottom-4 left-0 right-0 px-4 transition-opacity duration-300">
-                  {speakerEntry.data.topic}
-                </p>
-              )}
-            </div>
-          </div>
-        ))
-      }
-    </div>
-  </Container>
 
   <!-- Steps Widget ****************** -->
 

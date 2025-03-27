@@ -1,13 +1,13 @@
 ---
 draft: false
 name: "Xinrui Liu"
-title: "VP of Dify"
+title: "Developer Ecosystem Director at LangGenius"
 avatar: {
     src: "/images/speakers/xinrui-liu.jpg",
     alt: "Xinrui Liu"
 }
-topic: ""
-org: "Dify"
+topic: "Tech together, Powered by Dify"
+org: "LangGenius"
 track: "ai-apps"
 publishDate: "2025-03-14 16:49"
 ---

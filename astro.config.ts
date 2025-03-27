@@ -69,7 +69,7 @@ export default defineConfig({
   },
 
   server: {
-    port: 80, // Replace with desired port
+    port: 81, // Replace with desired port
     host: true // Optional: Allow network access
   },
 

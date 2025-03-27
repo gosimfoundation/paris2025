@@ -1,9 +1,9 @@
 ---
-draft: true
+draft: false
 name: "Yinping Ma"
 title: "Engineer at Peking University"
 avatar: {
-    src: "/images/speakers/yinping-ma.png",
+    src: "/images/speakers/yinping-ma.jpg",
     alt: "Yinping Ma"
 }
 topic: "Open-source intelligent computing integrated management and utilization foundational software - SCOW and CraneSched"
