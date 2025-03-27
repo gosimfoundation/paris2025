@@ -13,10 +13,11 @@ const getSpeaker = (id) => speakersData.speakers.find(s => s.id === id);
       <!-- Sequential Days Display -->
       {days.map((day, dayIndex) => (
         <div class="mb-12">
-          <!-- Day Header -->
-          <h2 class="text-2xl font-bold text-center text-gray-900 dark:text-white mb-6">
-            {day.title}
-          </h2>
+          <div class="flex justify-center mb-6">
+            <h2 class="w-full max-w-3xl px-6 py-3 text-2xl font-bold text-center text-gray-900 dark:text-white bg-indigo-100 dark:bg-gray-700 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600">
+              {day.title}
+            </h2>
+          </div>
 
           <div class="px-4 py-4 md:px-6 lg:px-8 rounded-lg border border-gray-100 bg-gray-50 dark:border-gray-700 dark:bg-gray-800">
             <!-- Track Tabs -->

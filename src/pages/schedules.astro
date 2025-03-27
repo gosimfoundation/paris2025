@@ -1,10 +1,6 @@
 ---
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import Content from '~/components/widgets/Content.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
-import Container from '~/components/widgets/Container.astro';
+import HeroSmall from '~/components/widgets/HeroSmall.astro';
+// import Container from '~/components/widgets/Container.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import GosimSchedule from '~/components/GosimSchedule.astro';
 
@@ -14,27 +10,26 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <Container>
+  <!-- <Container>
     <div class="mt-24">
       <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center">
         <span class="text-indigo-600">Full Conference Schedule</span>
       </h2>
       <p class="text-lg mt-4 text-slate-600 text-center">Organized with precision and care</p>
     </div>
-   </Container
-  >
+   </Container> -->
 
   <!-- Hero Widget ******************* -->
 
-  <!-- <Hero
-    tagline="Schedule"
-    title="2 Full Days of Sessions"
+  <HeroSmall
+    tagline=""
+    title="Full Conference Schedule"
     subtitle=""
     bg={`
-      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('src/assets/images/hero-bk06.png');">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('src/assets/images/hero-bk07.png');">
       </div>
     `}
-  /> -->
+  />
 
   <!-- Schedule Widget *********** -->
 
