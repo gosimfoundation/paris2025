@@ -2,10 +2,8 @@
 import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Layout from '~/layouts/PageLayout.astro';
-import { Icon } from 'astro-icon/components';
 
 const metadata = {
   title: 'Open-Source AI Strategy Forum - GOSIM AI Paris 2025',
@@ -23,28 +21,34 @@ const metadata = {
     `}
   >
     <Fragment slot="title">
-      <span class="text-accent text-purple-600 text-7xl tracking-tighter dark:text-white highlight">Open-Source AI Strategy Forum</span>
+      <span class="text-accent text-purple-600 text-7xl tracking-tighter dark:text-white highlight"
+        >Open-Source AI Strategy Forum</span
+      >
     </Fragment>
 
     <Fragment slot="tagline">
-      <span class="text-accent text-xl  text-purple-600  dark:text-white highlight normal-case">Co-located Event at GOSIM AI Paris 2025 on May 5th</span>
+      <span class="text-accent text-xl text-purple-600 dark:text-white highlight normal-case"
+        >Co-located Event at GOSIM AI Paris 2025 on May 5th</span
+      >
     </Fragment>
 
     <Fragment slot="subtitle">
-      <div class="  mt-10">
-
-      <span class="hidden sm:inline text-lg text-gray-600">
-        <span class="font-normal"> A unique gathering of industry leaders, policymakers, and open-source innovators at GOSIM AI Paris 2025. This exclusive workshop will bring together global thought leaders, policymakers, researchers, and open-source AI pioneers to discuss the pressing challenges and opportunities in the open-source AI landscape. The event will culminate in a networking dinner cruise along the Seine River, providing a scenic and informal setting for further discussions and collaborations.
-      </span>
-    </div>
+      <div class="mt-10">
+        <span class="hidden sm:inline text-lg text-gray-600 font-normal">
+          A unique gathering of industry leaders, policymakers, and open-source innovators at GOSIM AI Paris 2025. This
+          exclusive forum will bring together global thought leaders, policymakers, researchers, and open-source AI
+          pioneers to discuss the pressing challenges and opportunities in the open-source AI landscape. The event will
+          culminate in a networking dinner cruise along the Seine River, providing a scenic and informal setting for
+          further discussions and collaborations.
+        </span>
+      </div>
     </Fragment>
-
-</Hero>
+  </Hero>
 
   <!-- Overview Section -->
   <Content
     isReversed
-    title="Workshop Overview"
+    title="Forum Overview"
     items={[
       {
         title: 'Date',
@@ -53,23 +57,22 @@ const metadata = {
       },
       {
         title: 'Venue',
-        description: 'Station F, Paris (Executive Workshop Room)',
+        description: 'Station F, Paris (Executive Room) <i>(Subject to change)</i>',
         icon: 'tabler:map-pin',
       },
       {
         title: 'Format',
-        description: 'Full-day executive workshop with moderated discussions and strategic planning sessions',
+        description: 'Full-day executive forum with moderated discussions and strategic planning sessions',
         icon: 'tabler:layout-dashboard',
       },
     ]}
-  image={{ src: '~/assets/images/ai-forum.png', alt: 'Forum Image', class: 'opacity-80' }}
-
+    image={{ src: '~/assets/images/ai-forum.png', alt: 'Forum Image', class: 'opacity-80' }}
   >
     <Fragment slot="content">
       <p class="mt-4 text-lg font-normal text-gray-600">
         Join us at the <a href="https://gosim.org" class="text-blue-600 hover:underline">GOSIM</a>-hosted Open-Source AI
         Strategy Forum, where participants will engage in high-level discussions about the intersection of commercial
-        interests and open-source AI development. This invitation-only workshop provides a unique opportunity to shape
+        interests and open-source AI development. This invitation-only forum provides a unique opportunity to shape
         policies, strategies, and collaborative frameworks that will influence the future of AI innovation globally.
       </p>
     </Fragment>
@@ -78,12 +81,13 @@ const metadata = {
   <!-- Key Focus Areas -->
   <Features2
     title="Key Focus Areas"
-    subtitle="The workshop will explore five key themes shaping the future of open-source AI:"
+    subtitle="The forum will explore five key themes shaping the future of open-source AI:"
     columns={3}
     items={[
       {
         title: 'AI Models & Innovation',
-        description: 'Addressing the need for transparency, reproducibility, and accessibility in AI model development.',
+        description:
+          'Addressing the need for transparency, reproducibility, and accessibility in AI model development.',
         icon: 'tabler:route',
       },
       {
@@ -116,18 +120,16 @@ const metadata = {
     </Fragment>
   </Features2>
 
-  <!-- Workshop Agenda -->
   <Steps
-    title="Workshop Agenda"
+    title="Forum Agenda"
     subtitle="A full-day program featuring expert-led discussions, strategic planning sessions, and networking opportunities."
-
     items={[
       {
         title: 'Morning Session: Setting the Stage',
         description: `
           <ul class="list-disc pl-6 space-y-2">
             <li><strong></strong> Registration and Networking Breakfast</li>
-            <li><strong>Keynote Address:</strong> The State of Open Source AI and Its Future</li>
+            <li><strong>Keynote Address:</strong> The State of Open-Source AI and Its Future</li>
             <li><strong>Panel Discussion:</strong> Open AI Challenges - Perspectives from Industry, Academia, and Government</li>
               <ul class="list-disc pl-6 mt-2">
                 <li>Model Panel</li>
@@ -149,10 +151,10 @@ const metadata = {
         title: 'Afternoon Session: Solutions and Strategies',
         description: `
           <ul class="list-disc pl-6 space-y-2">
-            <li><strong>Lightning Talks:</strong> Case Studies in Open Source AI Success and Failure</li>
+            <li><strong>Lightning Talks:</strong> Case Studies in Open-Source AI Success and Failure</li>
             <li><strong>Roundtable Discussions:</strong> Crafting a Collaborative Roadmap</li>
             <li><strong>Coffee Break</strong> </li>
-            <li><strong>Workshop Report Drafting:</strong> Key Takeaways and Policy Recommendations
+            <li><strong>Forum Report Drafting:</strong> Key Takeaways and Policy Recommendations
 Closing Remarks</li>
           </ul>`,
         icon: 'tabler:sun',
@@ -167,19 +169,18 @@ Closing Remarks</li>
         icon: 'tabler:moon-stars',
       },
     ]}
-
   />
 
-  <!-- Workshop Outputs -->
+  <!-- Forum Outputs -->
   <Features2
-    title="Workshop Outputs"
+    title="Forum Outputs"
     subtitle="Participants will contribute to developing tangible outcomes that influence the future of AI strategy."
     columns={3}
     items={[
       {
         title: 'Strategic Whitepaper',
         description:
-          'GOSIM Open Source AI Strategy Report: A synthesized document capturing key discussions, recommendations, and action points from the workshop, to be published on the GOSIM website.',
+          'GOSIM Open-Source AI Strategy Report: A synthesized document capturing key discussions, recommendations, and action points from the forum, to be published on the GOSIM website.',
         icon: 'tabler:file-text',
       },
       {
@@ -197,9 +198,9 @@ Closing Remarks</li>
     ]}
   />
 
-  <!-- Workshop Participants -->
+  <!-- Forum Participants -->
   <Features2
-    title="Workshop Participants"
+    title="Forum Participants"
     subtitle="An exclusive gathering of decision-makers and thought leaders across the AI ecosystem."
     columns={3}
     items={[
@@ -226,13 +227,13 @@ Closing Remarks</li>
     </Fragment>
   </Features2>
 
-  <!-- Workshop Invitation -->
+  <!-- Forum Invitation -->
   <Content
-    title="Workshop Invitation"
+    title="Forum Invitation"
     image={{
       src: '~/assets/images/forum-invite.png',
       alt: 'GOSIM Open-Source AI Strategy Forum',
-      class: 'mt-20'
+      class: 'mt-20',
     }}
   >
     <Fragment slot="content">
@@ -263,7 +264,6 @@ Closing Remarks</li>
           >strategy-forum@gosim.org</span
         >
       </p>
-
     </Fragment>
   </Content>
 </Layout>
