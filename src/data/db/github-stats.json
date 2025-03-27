@@ -1152,7 +1152,7 @@
       "full_name": "rerun-io/rerun",
       "url": "https://github.com/rerun-io/rerun",
       "description": "Visualize streams of multimodal data. Free, fast, easy to use, and simple to integrate. Built in Rust.",
-      "stars": 8.0,
+      "stars": 8.1,
       "age_months": 35.6,
       "forks": 426,
       "language": "Rust",
