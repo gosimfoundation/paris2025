@@ -17,10 +17,9 @@ We extend our heartfelt gratitude to all the local Paris volunteers who are help
 | **Sajjad Houssenaly** | **Myriam Dardour** | **Elsa Felts** |
 | **Lila Elrhoul** | **Ce Ju** | **Wenqing Zhang** |
 | **Munier** | **Lazlo Guiol** | **Jagan Koipallil** |
-| **Mathilde Cros** | **Marina Barannikov** | **Sylvia Ren** |
+| **Lizhan Hong** | **Marina Barannikov** | **Sylvia Ren** |
 | **Yang Yixing** | **Roy CHUNG** | **Yu ZHOU** |
 | **Natalia Golunga** | **Iris Kunz** | **Junji LI** |
-| **Lizhan Hong** | | |
 
 </div>
 
