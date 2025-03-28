@@ -6,9 +6,8 @@ import Gosim from '~/components/widgets/Gosim.astro';
 // import ShadcnDemo from '~/components/ShadcnDemo.astro';
 // import AnimataDemo from '~/components/AnimataDemo.astro';
 
-// import Schedule from '~/components/widgets/Schedule.astro';
 // import Sponsors from '~/components/widgets/Sponsors.astro';
-// import Features from '~/components/widgets/Features.astro';
+import Brands from '~/components/widgets/Brands.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
@@ -16,17 +15,15 @@ import Content from '~/components/widgets/Content.astro';
 // import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 // import CallToAction from '~/components/widgets/CallToAction.astro';
-// import Testimonials from '~/components/Testimonials.astro';
 import Highlight from '~/components/Highlight.astro';
 
 import { getCollection } from 'astro:content';
 import { Picture } from 'astro:assets';
 import Container from '~/components/widgets/Container.astro';
-// import Sectionhead from '~/components/widgets/Sectionhead.astro';
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedSpeakers = await getCollection('speaker', ({ data }) => {
-  return !data.draft && data.name !== "TBD" && data.publishDate < new Date();
+  return !data.draft && data.name !== 'TBD' && data.publishDate < new Date();
 });
 
 // function getPrettyTrackName(track) {
@@ -119,13 +116,9 @@ const metadata = {
     ]}
   />
 
-  <!-- <div class="mt-16 border-y py-6 border-slate-100">
-    <Sponsors />
-</div>  -->
+  <!-- <Sponsors /> -->
 
   <Highlight />
-
-  <!-- <GosimSchedule /> -->
 
   <Features2
     id="why-attend"
@@ -245,7 +238,7 @@ const metadata = {
         publishedSpeakers.map((speakerEntry) => (
           <div class="group relative">
             <div class="w-full aspect-square rounded-b-lg overflow-hidden transition-transform duration-500 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
-            {/* {speakerEntry.data.track && (
+              {/* {speakerEntry.data.track && (
               <div class="w-full bg-indigo-600/80 text-white text-xs py-1 px-2 text-center rounded-t-lg mt-0">
                 {Array.isArray(speakerEntry.data.track)
                   ? speakerEntry.data.track.map((t) => getPrettyTrackName(t)).join(' • ')
@@ -330,6 +323,171 @@ const metadata = {
   </Content>
 
   <!-- Steps Widget ****************** -->
+  <Brands
+    title="Partnerships & Collaborations"
+    subtitle="GOSIM is proud to partner with these organizations to being the best events to the open-source coummunity. We thank all the speakers and their respective organizations for their support."
+    icons={[]}
+    images={[
+      {
+        src: '~/assets/images/brands/qwen.png',
+        alt: 'Qwen',
+      },
+      {
+        src: '~/assets/images/brands/huggingface.png',
+        alt: 'Hugging Face',
+      },
+      {
+        src: '~/assets/images/brands/nvidia.png',
+        alt: 'Nvidia',
+      },
+      {
+        src: '~/assets/images/brands/baai.png',
+        alt: 'BAAI',
+      },
+      {
+        src: '~/assets/images/brands/deepmind.png',
+        alt: 'Google DeepMind',
+      },
+
+      {
+        src: '~/assets/images/brands/pytorch.png',
+        alt: 'PyTorch',
+      },
+      {
+        src: '~/assets/images/brands/vllm.png',
+        alt: 'vLLM',
+      },
+      {
+        src: '~/assets/images/brands/ragflow.png',
+        alt: 'RAGFlow',
+      },
+
+      {
+        src: '~/assets/images/brands/lf-research-color.svg',
+        alt: 'Linux Foundation',
+      },
+      {
+        src: '~/assets/images/brands/aifc.png',
+        alt: 'AIFC',
+      },
+      {
+        src: '~/assets/images/brands/apache.png',
+        alt: 'Apache Software Foundation',
+      },
+      {
+        src: '~/assets/images/brands/lf-gen-ai.png',
+        alt: 'LF Generative AI Commons',
+      },
+      {
+        src: '~/assets/images/brands/openwallet.svg',
+        alt: 'Open Wallet',
+      },
+      {
+        src: '~/assets/images/brands/sw-heritage.png',
+        alt: 'Softawre Heritage',
+      },
+      {
+        src: '~/assets/images/brands/eclipse-foundation.png',
+        alt: 'Eclipse Foundation',
+      },
+      {
+        src: '~/assets/images/brands/khronosgroup.png',
+        alt: 'Khronos Group',
+      },
+
+      {
+        src: '~/assets/images/brands/mindspore.png',
+        alt: 'MindSpore',
+      },
+      {
+        src: '~/assets/images/brands/flagopen.png',
+        alt: 'FlagOpen',
+      },
+      {
+        src: '~/assets/images/brands/sgl.png',
+        alt: 'SGLang',
+      },
+
+      {
+        src: '~/assets/images/brands/unitree.png',
+        alt: 'Unitree Robotics',
+      },
+      {
+        src: '~/assets/images/brands/lerobot.png',
+        alt: 'LeRobot',
+      },
+      {
+        src: '~/assets/images/brands/dora.png',
+        alt: 'Dora',
+      },
+
+      {
+        src: '~/assets/images/brands/airs.png',
+        alt: 'AIRS',
+      },
+      {
+        src: '~/assets/images/brands/ustoc.png',
+        alt: 'University of Science and Technology of China',
+      },
+      {
+        src: '~/assets/images/brands/peking-university.png',
+        alt: 'Peking University',
+      },
+      {
+        src: '~/assets/images/brands/zenoh.png',
+        alt: 'Zenoh',
+      },
+      {
+        src: '~/assets/images/brands/neo4j.png',
+        alt: 'neo4j',
+      },
+      {
+        src: '~/assets/images/brands/makepad.png',
+        alt: 'Makepad',
+      },
+      {
+        src: '~/assets/images/brands/camelai.png',
+        alt: 'Camel AI',
+      },
+      {
+        src: '~/assets/images/brands/spring.png',
+        alt: 'Spring',
+      },
+      {
+        src: '~/assets/images/brands/zhipuai.png',
+        alt: 'Zhipu AI',
+      },
+      {
+        src: '~/assets/images/brands/mianbi.png',
+        alt: 'Mianbi',
+      },
+      {
+        src: '~/assets/images/brands/koyeb.jpg',
+        alt: 'Koyeb',
+      },
+
+      {
+        src: '~/assets/images/brands/metagpt.png',
+        alt: 'MetaGPT',
+      },
+      {
+        src: '~/assets/images/brands/ag2.png',
+        alt: 'AG2',
+      },
+      {
+        src: '~/assets/images/brands/osi.png',
+        alt: 'Open Source Initiative',
+      },
+      {
+        src: '~/assets/images/brands/minimax.png',
+        alt: 'MiniMax',
+      },
+      {
+        src: '~/assets/images/brands/moxin.png',
+        alt: 'Moxin LLM',
+      },
+    ]}
+  />
 
   <Steps
     title="Upcoming GOSIM Events"
@@ -385,6 +543,9 @@ const metadata = {
       alt: 'GOSIM Past Events',
     }}
     showSecondSet={true}
+    bg={`
+      <div class="absolute inset-0 bg-indigo-50 dark:bg-transparent"></div>
+    `}
   />
 
   <!-- HighlightedPosts Widget *******
